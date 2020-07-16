@@ -1,0 +1,22 @@
+{
+  "name": "general-website-resources",
+  "version": "1.0.0",
+  "description": "This repository is meant for the discussion and work of the GNOME websites as a whole, not any individual website. Individual website implementations should belong in their own project.",
+  "main": "postcss.config.js",
+  "dependencies": {
+    "autoprefixer": "^9.8.5",
+    "postcss-cli": "^7.1.1",
+    "tailwindcss": "^1.5.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "build": "postcss css/tailwind.css -o public/build/tailwind.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@gitlab.gnome.org:Teams/Engagement/websites/general-website-resources.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
