@@ -5,12 +5,15 @@
   "main": "postcss.config.js",
   "dependencies": {
     "autoprefixer": "^9.8.5",
+    "colors": "^1.4.0",
+    "lodash": "^4.17.19",
     "postcss-cli": "^7.1.1",
     "tailwindcss": "^1.5.1"
   },
   "devDependencies": {},
   "scripts": {
-    "build": "postcss css/tailwind.css -o public/build/tailwind.css"
+    "build": "postcss css/tailwind.css -o public/build/tailwind.css",
+    "watch": "postcss css/tailwind.css -o public/build/tailwind.css --watch"
   },
   "repository": {
     "type": "git",

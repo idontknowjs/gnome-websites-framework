@@ -93,9 +93,23 @@ module.exports = {
         }
       },
     },
+    fontFamily: {
+      sans: [
+        '"Source Sans Pro"',
+        'Cantarell',
+        '"Droid Sans"',
+        'Ubuntu',
+        '"DejaVu Sans"',
+        'Arial',
+        'sans-serif',
+      ],
+    },
   },
   variants: {
     backgroundColor: ['responsive', 'hover', 'focus', 'active'],
   },
-  plugins: [],
+  plugins: [
+    require('./plugins/buttons'),
+    // require('./plugins/typography')
+  ],
 }
