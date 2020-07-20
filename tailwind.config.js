@@ -108,8 +108,5 @@ module.exports = {
   variants: {
     backgroundColor: ['responsive', 'hover', 'focus', 'active'],
   },
-  plugins: [
-    require('./plugins/buttons'),
-    // require('./plugins/typography')
-  ],
+  plugins: [],
 }

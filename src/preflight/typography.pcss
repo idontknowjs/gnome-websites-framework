@@ -1,8 +1,8 @@
-@tailwind base;
-
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap');
 
-html {
+*,
+html,
+body {
     @apply font-sans;
 }
 
@@ -11,16 +11,14 @@ h1 {
 }
 
 h2 {
-    @apply text-5xl text-gnome-blue-500;
+    @apply text-5xl;
+    color: theme('colors.gnome-blue.500');
 }
 
 h3 {
-    @apply text-3xl font-light;
+    @apply text-3xl font-semibold;
 }
 
 h4 {
     @apply text-3xl font-semibold;
 }
-
-@tailwind components;
-@tailwind utilities;

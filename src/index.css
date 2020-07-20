@@ -1,0 +1,7 @@
+@import "~tailwindcss/base.css";
+@import "preflight.pcss";
+
+@import "~tailwindcss/components.css";
+@import "components.pcss";
+
+@import "~tailwindcss/utilities.css";
