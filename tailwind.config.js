@@ -104,6 +104,9 @@ module.exports = {
         'sans-serif',
       ],
     },
+    borderWidth: {
+      '3': '3px'
+    }
   },
   variants: {
     backgroundColor: ['responsive', 'hover', 'focus', 'active'],

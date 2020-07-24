@@ -1,43 +1,123 @@
 .btn {
-  @apply px-4 py-2 rounded;
+  @apply px-4 py-2 border-solid border-3 border-transparent shadow font-semibold text-white rounded-md transition duration-200 ease-in-out;
 
-  .gnome-blue {
+  &:hover {
+    @apply shadow-lg;
+  }
+
+  &:active {
+    @apply shadow-xs;
+  }
+
+  &.gnome-blue {
     background-color: theme('colors.gnome-blue.500');
 
-    :hover {
+    &:hover,
+    &:active {
       background-color: theme('colors.gnome-blue.300');
     }
   }
 
-  .red {
+  &.red {
     background-color: theme('colors.red.500');
 
-    :hover {
+    &:hover,
+    &:active {
       background-color: theme('colors.red.300');
     }
   }
 
-  .orange {
+  &.orange {
     background-color: theme('colors.orange.500');
 
-    :hover {
+    &:hover,
+    &:active {
       background-color: theme('colors.orange.300');
     }
   }
 
-  .yellow {
+  &.yellow {
     background-color: theme('colors.yellow.500');
 
-    :hover {
+    &:hover,
+    &:active {
       background-color: theme('colors.yellow.300');
     }
   }
 
-  .green {
+  &.green {
     background-color: theme('colors.green.500');
 
-    :hover {
+    &:hover,
+    &:active {
       background-color: theme('colors.green.300');
     }
+  }
+
+  &.outline-gnome-blue {
+    background-color: theme('colors.transparent');
+    @apply border-gnome-blue-500 text-gnome-blue-500;
+
+    &:hover,
+    &:active {
+      @apply text-white;
+      background-color: theme('colors.gnome-blue.500');
+    }
+  }
+
+  &.outline-red {
+    background-color: theme('colors.transparent');
+    @apply border-red-500 text-red-500;
+
+    &:hover,
+    &:active {
+      @apply text-white;
+      background-color: theme('colors.red.500');
+    }
+  }
+
+  &.outline-orange {
+    background-color: theme('colors.transparent');
+    @apply border-orange-500 text-orange-500;
+
+    &:hover,
+    &:active {
+      @apply text-white;
+      background-color: theme('colors.orange.500');
+    }
+  }
+
+  &.outline-yellow {
+    background-color: theme('colors.transparent');
+    @apply border-yellow-500 text-yellow-500;
+
+    &:hover,
+    &:active {
+      @apply text-white;
+      background-color: theme('colors.yellow.500');
+    }
+  }
+
+  &.outline-green {
+    background-color: theme('colors.transparent');
+    @apply border-green-500 text-green-500;
+
+    &:hover,
+    &:active {
+      @apply text-white;
+      background-color: theme('colors.green.500');
+    }
+  }
+
+  &.squared {
+    @apply rounded-none;
+  }
+
+  &.small {
+    @apply px-2 py-1 text-sm;
+  }
+
+  &.large {
+    @apply px-6 py-3 text-xl;
   }
 }
