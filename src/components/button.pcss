@@ -1,7 +1,9 @@
 .btn {
   @apply px-4 py-2 border-solid border-3 border-transparent shadow font-semibold text-white rounded-md transition duration-200 ease-in-out;
+  background-color: theme('colors.gnome-blue.500');
 
-  &:hover {
+  &:hover,
+  &:focus {
     @apply shadow-lg;
   }
 
@@ -9,20 +11,18 @@
     @apply shadow-xs;
   }
 
-  &.gnome-blue {
-    background-color: theme('colors.gnome-blue.500');
-
-    &:hover,
-    &:active {
+  &:hover,
+  &:active,
+  &:focus {
       background-color: theme('colors.gnome-blue.300');
-    }
   }
 
   &.red {
     background-color: theme('colors.red.500');
 
     &:hover,
-    &:active {
+    &:active,
+    &:focus {
       background-color: theme('colors.red.300');
     }
   }
@@ -31,7 +31,8 @@
     background-color: theme('colors.orange.500');
 
     &:hover,
-    &:active {
+    &:active,
+    &:focus {
       background-color: theme('colors.orange.300');
     }
   }
@@ -40,7 +41,8 @@
     background-color: theme('colors.yellow.500');
 
     &:hover,
-    &:active {
+    &:active,
+    &:focus {
       background-color: theme('colors.yellow.300');
     }
   }
@@ -49,17 +51,19 @@
     background-color: theme('colors.green.500');
 
     &:hover,
-    &:active {
+    &:active,
+    &:focus {
       background-color: theme('colors.green.300');
     }
   }
 
-  &.outline-gnome-blue {
+  &.outline {
     background-color: theme('colors.transparent');
     @apply border-gnome-blue-500 text-gnome-blue-500;
 
     &:hover,
-    &:active {
+    &:active,
+    &:focus {
       @apply text-white;
       background-color: theme('colors.gnome-blue.500');
     }
@@ -70,7 +74,8 @@
     @apply border-red-500 text-red-500;
 
     &:hover,
-    &:active {
+    &:active,
+    &:focus {
       @apply text-white;
       background-color: theme('colors.red.500');
     }
@@ -81,7 +86,8 @@
     @apply border-orange-500 text-orange-500;
 
     &:hover,
-    &:active {
+    &:active,
+    &:focus {
       @apply text-white;
       background-color: theme('colors.orange.500');
     }
@@ -92,7 +98,8 @@
     @apply border-yellow-500 text-yellow-500;
 
     &:hover,
-    &:active {
+    &:active,
+    &:focus {
       @apply text-white;
       background-color: theme('colors.yellow.500');
     }
@@ -103,7 +110,8 @@
     @apply border-green-500 text-green-500;
 
     &:hover,
-    &:active {
+    &:active,
+    &:focus {
       @apply text-white;
       background-color: theme('colors.green.500');
     }
@@ -119,5 +127,87 @@
 
   &.large {
     @apply px-6 py-3 text-xl;
+  }
+
+  &.disabled {
+    background-color: theme('colors.gray.200');
+    @apply text-gray-800 shadow-none cursor-not-allowed;
+
+    &:hover,
+    &:active,
+    &:focus {
+      @apply shadow-none;
+    }
+  }
+}
+
+.link {
+  background-color: theme('colors.transparent');
+  @apply px-1 font-semibold border-solid border-3 border-transparent;
+
+  &:hover,
+  &:active,
+  &:focus {
+    border-bottom: 3px solid theme('colors.black');
+  }
+
+  &.gnome-blue {
+    @apply text-gnome-blue-500;
+
+    &:hover,
+    &:active,
+    &:focus {
+      border-bottom: 3px solid theme('colors.gnome-blue.500');
+    }
+  }
+
+  &.red {
+    @apply text-red-500;
+
+    &:hover,
+    &:active,
+    &:focus {
+      border-bottom: 3px solid theme('colors.red.500');
+    }
+  }
+
+  &.orange {
+    @apply text-orange-500;
+
+    &:hover,
+    &:active,
+    &:focus {
+      border-bottom: 3px solid theme('colors.orange.500');
+    }
+  }
+
+  &.yellow {
+    @apply text-yellow-500;
+
+    &:hover,
+    &:active,
+    &:focus {
+      border-bottom: 3px solid theme('colors.yellow.500');
+    }
+  }
+
+  &.green {
+    @apply text-green-500;
+
+    &:hover,
+    &:active,
+    &:focus {
+      border-bottom: 3px solid theme('colors.green.500');
+    }
+  }
+
+  &.white {
+    @apply text-white;
+
+    &:hover,
+    &:active,
+    &:focus {
+      border-bottom: 3px solid theme('colors.white');
+    }
   }
 }
