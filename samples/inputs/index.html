@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../../dist/index.css">
+    <title>Inputs</title>
+</head>
+
+<body class="bg-gray-100">
+    <div class="container my-8 mx-auto shadow-lg p-8 rounded-md bg-white">
+        <h2 class="mb-4">Inputs</h2>
+        <form class="flex flex-col">
+            <h3>This is a form</h3>
+            <label for="first-name">First Name</label>
+            <input type="text" id="first-name" placeholder="First name">
+
+            <label for="last-name">Last Name</label>
+            <input type="text" id="last-name">
+
+            <label for="email">Email</label>
+            <input type="email" id="email">
+
+            <label for="phone">Telephone</label>
+            <input type="tel" id="phone">
+
+            <label for="message">Message</label>
+            <textarea id="message"></textarea>
+
+            <label for="select">Select</label>
+            <div class="flex-shrink w-full inline-block relative">
+                <select class="block appearance-none w-full border border-gray-400 px-4 py-2 pr-8 rounded">
+                    <option>English</option>
+                    <option>France</option>
+                    <option>Spanish</option>
+                </select>
+                <div class="pointer-events-none absolute top-0 mt-3  right-0 flex items-center px-2 text-gray-600">
+                    <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                        <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" /></svg>
+                </div>
+            </div>
+
+            <label>
+                <input type="checkbox" name="checkbox-group"><span>Checkbox 1</span>
+                <input type="checkbox" name="checkbox-group"><span>Checkbox 2</span>
+                <input type="checkbox" name="checkbox-group"><span>Checkbox 3</span>
+            </label>
+
+            <label>
+                <input type="radio" name="radio-group"><span>Radio 1</span>
+                <input type="radio" name="radio-group"><span>Radio 2</span>
+                <input type="radio" name="radio-group"><span>Radio 3</span>
+            </label>
+
+            <label>
+                <input type="checkbox" name="switch"><span>Switch</span>
+            </label>
+        </form>
+    </div>
+</body>
+
+</html>
