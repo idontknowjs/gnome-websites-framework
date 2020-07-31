@@ -1,17 +1,44 @@
 input,
 textarea,
 select {
-    @apply appearance-none rounded border border-gray-200 bg-white shadow text-gray-800 px-4 py-2;
+    @apply form-input border border-gray-200 bg-white shadow text-gray-800 px-4 py-2;
+
+    &.danger {
+        @apply text-red-400 border border-red-400;
+    }
 
     &:focus {
         @apply shadow-outline;
     }
-
-    &.danger {
-        @apply border-red-400 text-red-400;
-    }
 }
 
-select {
-    @apply w-full;
+.form-checkbox {
+    @apply text-gnome-blue-500;
+}
+
+.form-radio {
+    @apply text-gnome-blue-500;
+}
+
+.toggle {
+    @apply relative inline-block w-10 mr-2 align-middle select-none transition duration-500 ease-in;
+
+    .toggle-label {
+        @apply block overflow-hidden h-6 rounded-full bg-gray-200 cursor-pointer;
+    }
+
+    .toggle-checkbox {
+        @apply shadow-none absolute block w-6 h-6 rounded-full bg-white border-4 appearance-none cursor-pointer;
+
+        &:checked {
+            @apply: right-0 border-gnome-blue-500;
+            right: 0;
+            border-color: theme('colors.gnome-blue.500');
+        }
+
+        &:checked + .toggle-label {
+            @apply: bg-gnome-blue-500;
+            background-color: theme('colors.gnome-blue.500');
+        }
+    }
 }
