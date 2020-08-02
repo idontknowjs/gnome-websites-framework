@@ -1,0 +1,35 @@
+image: node:latest
+
+stages:
+  - build
+  - deploy
+
+cache:
+  paths:
+    - node_modules/
+
+install_dependencies:
+  stage: build
+  script:
+    - npm ci
+    - npm run build
+  artifacts:
+    paths:
+      - dist
+      - samples
+      - assets
+  only:
+    - master
+
+deploy_to_pages:
+  stage: deploy
+  script:
+    - mkdir public
+    - cp -r dist assets samples public/
+  artifacts:
+    paths:
+      - public
+  only:
+    - master
+
+
