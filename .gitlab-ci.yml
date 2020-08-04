@@ -25,7 +25,7 @@ pages:
   stage: deploy
   script:
     - mkdir public
-    - cp -r dist assets samples public/
+    - cp -r dist assets samples/ public/
   artifacts:
     paths:
       - public
