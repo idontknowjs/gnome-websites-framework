@@ -44,7 +44,8 @@ select {
 }
 
 input[type=search] {
-    @apply pl-10;
+    @apply pl-8 border-transparent shadow-none rounded-none transition duration-200 ease-in-out;
+    border-bottom: 2px solid theme('colors.black');
 }
 
 .search {
@@ -52,5 +53,5 @@ input[type=search] {
 }
 
 .search-icon {
-    @apply absolute left-0 top-0 ml-3 my-3 text-gray-900 h-4 w-4;
+    @apply absolute left-0 top-0 my-3 text-gray-900 h-5 w-5;
 }

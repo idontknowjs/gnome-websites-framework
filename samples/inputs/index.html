@@ -34,11 +34,23 @@
             <label for="message" class="mt-6">Biography</label>
             <textarea id="message" class="mt-2"></textarea>
 
-            <div class="search mr-6 my-8">
-                <input type="search" placeholder="Search for content">
+            <label for="search" class="mt-8">Default search</label>
+            <div id="search" class="search mr-6 mb-8">
+                <input type="search" class="w-48" placeholder="Search for content">
                 <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                     fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                     class="feather feather-search">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                </svg>
+            </div>
+
+            <label for="search" class="mt-8">Collapsed search</label>
+            <div id="search" class="search mr-6 mb-8">
+                <input type="search" class="w-48 hidden" placeholder="Search for content">
+                <svg class="search-icon cursor-pointer" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" class="feather feather-search">
                     <circle cx="11" cy="11" r="8"></circle>
                     <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
                 </svg>
