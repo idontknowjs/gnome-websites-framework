@@ -38,3 +38,10 @@ jspm_packages/
 # System Files
 .DS_Store
 Thumbs.db
+
+# Jekyll files
+_site
+.sass-cache
+.jekyll-cache
+.jekyll-metadata
+vendor
