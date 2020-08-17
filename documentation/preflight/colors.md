@@ -44,9 +44,9 @@ nav_order: 1
 
 | Color value | Font color class | Background color class |
 |:-----------:|:----------------:|:----------------------:|
-| <span class="d-inline-block p-2 mr-1 v-align-middle bg-red-100 shadow-md"></span> `red-100` | `.text-red-100` | `.bg-red-100` |
-| <span class="d-inline-block p-2 mr-1 v-align-middle bg-red-200 shadow-md"></span> `red-200` | `.text-red-200` | `.bg-red-200` |
-| <span class="d-inline-block p-2 mr-1 v-align-middle bg-red-300 shadow-md"></span> `red-300` | `.text-red-300` | `.bg-red-300` |
+| <span class="d-inline-block p-2 mr-1 v-align-middle shadow-md" style="background-color: #FFF5F5;"></span> `red-100` | `.text-red-100` | `.bg-red-100` |
+| <span class="d-inline-block p-2 mr-1 v-align-middle shadow-md" style="background-color: #FFC2C2;"></span> `red-200` | `.text-red-200` | `.bg-red-200` |
+| <span class="d-inline-block p-2 mr-1 v-align-middle shadow-md" style="background-color: #FF8F90;"></span> `red-300` | `.text-red-300` | `.bg-red-300` |
 | <span class="d-inline-block p-2 mr-1 v-align-middle bg-red-400 shadow-md"></span> `red-400` | `.text-red-400` | `.bg-red-400` |
 | <span class="d-inline-block p-2 mr-1 v-align-middle bg-red-500 shadow-md"></span> `red-500` | `.text-red-500` | `.bg-red-500` |
 | <span class="d-inline-block p-2 mr-1 v-align-middle bg-red-600 shadow-md"></span> `red-600` | `.text-red-600` | `.bg-red-600` |
@@ -72,9 +72,9 @@ nav_order: 1
 
 | Color value | Font color class | Background color class |
 |:-----------:|:----------------:|:----------------------:|
-| <span class="d-inline-block p-2 mr-1 v-align-middle bg-yellow-100 shadow-md"></span> `yellow-100` | `.text-yellow-100` | `.bg-yellow-100` |
-| <span class="d-inline-block p-2 mr-1 v-align-middle bg-yellow-200 shadow-md"></span> `yellow-200` | `.text-yellow-200` | `.bg-yellow-200` |
-| <span class="d-inline-block p-2 mr-1 v-align-middle bg-yellow-300 shadow-md"></span> `yellow-300` | `.text-yellow-300` | `.bg-yellow-300` |
+| <span class="d-inline-block p-2 mr-1 v-align-middle shadow-md" style="background-color: #FFF4DB;"></span> `yellow-100` | `.text-yellow-100` | `.bg-yellow-100` |
+| <span class="d-inline-block p-2 mr-1 v-align-middle shadow-md" style="background-color: #FFE5A8;"></span> `yellow-200` | `.text-yellow-200` | `.bg-yellow-200` |
+| <span class="d-inline-block p-2 mr-1 v-align-middle shadow-md" style="background-color: #FFD575;"></span> `yellow-300` | `.text-yellow-300` | `.bg-yellow-300` |
 | <span class="d-inline-block p-2 mr-1 v-align-middle bg-yellow-400 shadow-md"></span> `yellow-400` | `.text-yellow-400` | `.bg-yellow-400` |
 | <span class="d-inline-block p-2 mr-1 v-align-middle bg-yellow-500 shadow-md"></span> `yellow-500` | `.text-yellow-500` | `.bg-yellow-500` |
 | <span class="d-inline-block p-2 mr-1 v-align-middle bg-yellow-600 shadow-md"></span> `yellow-600` | `.text-yellow-600` | `.bg-yellow-600` |
@@ -86,9 +86,9 @@ nav_order: 1
 
 | Color value | Font color class | Background color class |
 |:-----------:|:----------------:|:----------------------:|
-| <span class="d-inline-block p-2 mr-1 v-align-middle bg-green-100 shadow-md"></span> `green-100` | `.text-green-100` | `.bg-green-100` |
-| <span class="d-inline-block p-2 mr-1 v-align-middle bg-green-200 shadow-md"></span> `green-200` | `.text-green-200` | `.bg-green-200` |
-| <span class="d-inline-block p-2 mr-1 v-align-middle bg-green-300 shadow-md"></span> `green-300` | `.text-green-300` | `.bg-green-300` |
+| <span class="d-inline-block p-2 mr-1 v-align-middle shadow-md" style="background-color: #F0F9E6;"></span> `green-100` | `.text-green-100` | `.bg-green-100` |
+| <span class="d-inline-block p-2 mr-1 v-align-middle shadow-md" style="background-color: #D7EFBE;"></span> `green-200` | `.text-green-200` | `.bg-green-200` |
+| <span class="d-inline-block p-2 mr-1 v-align-middle shadow-md" style="background-color: #BEE595;"></span> `green-300` | `.text-green-300` | `.bg-green-300` |
 | <span class="d-inline-block p-2 mr-1 v-align-middle bg-green-400 shadow-md"></span> `green-400` | `.text-green-400` | `.bg-green-400` |
 | <span class="d-inline-block p-2 mr-1 v-align-middle bg-green-500 shadow-md"></span> `green-500` | `.text-green-500` | `.bg-green-500` |
 | <span class="d-inline-block p-2 mr-1 v-align-middle bg-green-600 shadow-md"></span> `green-600` | `.text-green-600` | `.bg-green-600` |
@@ -110,13 +110,13 @@ nav_order: 1
 | <span class="d-inline-block p-2 mr-1 v-align-middle bg-turquoise-800 shadow-md"></span> `turquoise-800` | `.text-turquoise-800` | `.bg-turquoise-800` |
 | <span class="d-inline-block p-2 mr-1 v-align-middle bg-turquoise-900 shadow-md"></span> `turquoise-900` | `.text-turquoise-900` | `.bg-turquoise-900` |
 
-## Turquoise
+## Purple
 
 | Color value | Font color class | Background color class |
 |:-----------:|:----------------:|:----------------------:|
-| <span class="d-inline-block p-2 mr-1 v-align-middle bg-purple-100 shadow-md"></span> `purple-100` | `.text-purple-100` | `.bg-purple-100` |
-| <span class="d-inline-block p-2 mr-1 v-align-middle bg-purple-200 shadow-md"></span> `purple-200` | `.text-purple-200` | `.bg-purple-200` |
-| <span class="d-inline-block p-2 mr-1 v-align-middle bg-purple-300 shadow-md"></span> `purple-300` | `.text-purple-300` | `.bg-purple-300` |
+| <span class="d-inline-block p-2 mr-1 v-align-middle shadow-md" style="background-color: #FAEBF9;"></span> `purple-100` | `.text-purple-100` | `.bg-purple-100` |
+| <span class="d-inline-block p-2 mr-1 v-align-middle shadow-md" style="background-color: #EFC3EC;"></span> `purple-200` | `.text-purple-200` | `.bg-purple-200` |
+| <span class="d-inline-block p-2 mr-1 v-align-middle shadow-md" style="background-color: #E49ADF;"></span> `purple-300` | `.text-purple-300` | `.bg-purple-300` |
 | <span class="d-inline-block p-2 mr-1 v-align-middle bg-purple-400 shadow-md"></span> `purple-400` | `.text-purple-400` | `.bg-purple-400` |
 | <span class="d-inline-block p-2 mr-1 v-align-middle bg-purple-500 shadow-md"></span> `purple-500` | `.text-purple-500` | `.bg-purple-500` |
 | <span class="d-inline-block p-2 mr-1 v-align-middle bg-purple-600 shadow-md"></span> `purple-600` | `.text-purple-600` | `.bg-purple-600` |
