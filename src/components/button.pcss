@@ -14,7 +14,8 @@
   &:hover,
   &:active,
   &:focus {
-      background-color: theme('colors.gnome-blue.300');
+    @apply text-white;
+    background-color: theme('colors.gnome-blue.300');
   }
 
   &.red {
@@ -136,7 +137,8 @@
     &:hover,
     &:active,
     &:focus {
-      @apply shadow-none;
+      @apply shadow-none text-gray-800;
+      background-color: theme('colors.gray.200');
     }
   }
 }
