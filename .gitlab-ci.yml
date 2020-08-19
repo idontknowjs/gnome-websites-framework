@@ -22,10 +22,15 @@ build:
     - master
 
 pages:
+  image: ruby:2.7
   stage: deploy
   script:
-    - mkdir public
+    - gem install bundler
+    - bundle install
+    - mkdir public documentation/_sass/custom/
     - cp -r dist assets samples/ public/
+    - cp dist/index.css "documentation/_sass/custom/custom.scss"
+    - bundle exec jekyll --source documentation/ --destination public/
   artifacts:
     paths:
       - public
