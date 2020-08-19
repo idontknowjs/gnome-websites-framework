@@ -4,7 +4,17 @@ title: Colors
 parent: Preflight
 nav_order: 1
 ---
+
 # Colors
+{: .no_toc }
+
+## Table of contents
+{: .no_toc .text-delta }
+
+1. TOC
+{:toc}
+
+---
 ## Black & White
 
 | Color value | Font color class | Background color class |
