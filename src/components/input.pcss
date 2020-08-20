@@ -46,6 +46,10 @@ select {
 input[type=search] {
     @apply pl-8 border-transparent shadow-none rounded-none transition duration-200 ease-in-out;
     border-bottom: 2px solid theme('colors.black');
+
+    &:focus {
+        border-bottom: 2px solid theme('colors.gnome-blue.500');
+    }
 }
 
 .search {
@@ -54,4 +58,8 @@ input[type=search] {
 
 .search-icon {
     @apply absolute left-0 top-0 my-3 text-gray-900 h-5 w-5;
+}
+
+#collapsable-search {
+    @apply hidden;
 }
