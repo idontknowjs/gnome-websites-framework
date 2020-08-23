@@ -35,10 +35,6 @@ jspm_packages/
 # dotenv environment variables file
 .env
 
-# System Files
-.DS_Store
-Thumbs.db
-
 # Jekyll files
 _site
 .sass-cache
