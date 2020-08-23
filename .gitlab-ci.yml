@@ -30,7 +30,7 @@ pages:
     - mkdir public documentation/_sass/custom/
     - cp -r dist assets samples/ public/
     - cp dist/index.css "documentation/_sass/custom/custom.scss"
-    - bundle exec jekyll serve --source documentation/ --destination public/
+    - bundle exec jekyll build -s documentation/ -d public/
   artifacts:
     paths:
       - public
