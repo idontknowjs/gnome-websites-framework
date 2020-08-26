@@ -1,4 +1,3 @@
-
 function toggleSearchInputDisplay(id) {
     let collapsableSearch = document.getElementById(id);
     console.log(collapsableSearch.style.display);
@@ -24,8 +23,7 @@ function toggleSearchIconColor(id) {
     let searchIcon = document.getElementById(id);
     if (searchIcon.classList.contains("text-gnome-blue-500")) {
         removeBlueFromSearchIcon(id);
-    }
-    else {
+    } else {
         addBlueToSearchIcon(id);
     }
 }
