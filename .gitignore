@@ -4,6 +4,7 @@
 /dist
 /tmp
 /out-tsc
+/public
 
 # IDE - VSCode
 .vscode/*
@@ -11,6 +12,9 @@
 !.vscode/tasks.json
 !.vscode/launch.json
 !.vscode/extensions.json
+
+# IDE - IntelliJ
+.idea
 
 # misc
 .sass-cache

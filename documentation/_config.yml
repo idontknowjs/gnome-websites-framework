@@ -1,9 +1,9 @@
 title: GNOME UI
 email: engagement@gnome.org
-description: >- # this means to ignore newlines until "baseurl:"
+description: >-
   GNOME's own UI library.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "/Engagement/websites/general-website-resources/"
+url: "https://teams.pages.gitlab.gnome.org"
 twitter_username: GNOME
 logo: "/assets/logo-horizontal.svg"
 
