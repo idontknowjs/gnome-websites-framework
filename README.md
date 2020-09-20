@@ -35,7 +35,7 @@ The GNOME UI library uses [Feather Icons](https://feathericons.com/) by default.
 
 1. [Install npm](https://www.npmjs.com/get-npm).
 2. Clone the repository:
-> $ git clone git@gitlab.gnome.org:Teams/Engagement/websites/general-website-resources.git
+> $ git clone https://gitlab.gnome.org/Teams/Engagement/websites/general-website-resources.git
 3. Navigate to the repository folder:
 > $ cd general-website-resources
 4. Install dependencies:
