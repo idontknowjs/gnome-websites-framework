@@ -18,18 +18,14 @@ build:
     - master
 
 pages:
-  image: ruby:2.7
+  image: registry.gitlab.com/pages/hugo/hugo_extended
   stage: deploy
   script:
-    - gem install bundler
-    - bundle install
-    - mkdir public documentation/_sass/custom/
-    - cp -r dist assets samples/ public/
-    - cp dist/index.css "documentation/_sass/custom/custom.scss"
-    - bundle exec jekyll build -s documentation/ -d public/
+    - cp dist/index.min.css "documentation/static/gnomeui.min.css"
+    - hugo -s documentation
   artifacts:
     paths:
-      - public
+      - documentation/public
   only:
     - master
 
