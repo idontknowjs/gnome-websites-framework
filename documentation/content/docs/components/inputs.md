@@ -6,130 +6,72 @@ nav_order: 3
 ---
 
 # Inputs
-{: .no_toc }
-
-## Table of contents
-{: .no_toc .text-delta }
-
-1. TOC
-{:toc}
-
----
-
-<br>
-
-Inputs are used when user data is required. It can be a text, a number, booleans, dates, etc. Using an informative `placeholder` is preferrable.
 
 ## Basic text
+
 For single line inputs.
 
-<br>
-
+{{< example >}}
 <div class="flex flex-col w-1/2">
     <label for="first-name" >First Name</label>
     <input type="text" id="first-name" class="mt-2" placeholder="Write your first name here">
 </div>
-
-<br>
-
-{% highlight html %}
-<div class="flex flex-col w-1/2">
-    <label for="first-name" >First Name</label>
-    <input type="text" id="first-name" class="mt-2" placeholder="Write your first name here">
-</div>
-{% endhighlight %}
+{{< /example >}}
 
 ## Text area
+
 For multiline inputs.
 
-<br>
-
+{{< example >}}
 <div class="flex flex-col">
     <label for="message" >Biography</label>
     <textarea id="message" class="mt-2"></textarea>
 </div>
-
-<br>
-
-{% highlight html %}
-<div class="flex flex-col">
-    <label for="biography" >Biography</label>
-    <textarea id="biography" class="mt-2"></textarea>
-</div>
-{% endhighlight %}
+{{< /example >}}
 
 ## Date
 
+{{< example >}}
 <div class="flex flex-col w-1/2">
     <label for="date">Birthday</label>
     <input type="date" class="mt-2" id="date">
 </div>
-
-<br>
-
-{% highlight html %}
-<div class="flex flex-col">
-    <label for="message" >Biography</label>
-    <textarea id="message" class="mt-2"></textarea>
-</div>
-{% endhighlight %}
+{{< /example >}}
 
 ## Email
 
+{{< example >}}
 <div class="flex flex-col w-1/2">
     <label for="email" >Email</label>
     <input type="email" class="mt-2" id="email" placeholder="your@email.com">
 </div>
-
-<br>
-
-{% highlight html %}
-<div class="flex flex-col w-1/2">
-    <label for="email" >Email</label>
-    <input type="email" class="mt-2" id="email" placeholder="your@email.com">
-</div>
-{% endhighlight %}
+{{< /example >}}
 
 ## Password
 
+{{< example >}}
 <div class="flex flex-col w-1/2">
     <label for="password" >Password</label>
     <input type="password" class="mt-2" id="password">
 </div>
-
-<br>
-
-{% highlight html %}
-<div class="flex flex-col w-1/2">
-    <label for="password" >Password</label>
-    <input type="password" class="mt-2" id="password">
-</div>
-{% endhighlight %}
+{{< /example >}}
 
 ## Invalid inputs
+
 When some input has invalid data or is not filled, apply the `danger` class.
 
-<br>
-
+{{< example >}}
 <div class="flex flex-col w-1/2">
     <label for="invalid">Invalid input</label>
     <input type="email" class="mt-2 danger" id="invalid">
 </div>
-
-<br>
-
-{% highlight html %}
-<div class="flex flex-col w-1/2">
-    <label for="invalid">Invalid input</label>
-    <input type="email" class="mt-2 danger" id="invalid">
-</div>
-{% endhighlight %}
+{{< /example >}}
 
 ## Select
+
 For predetermined options.
 
-<br>
-
+{{< example >}}
 <label for="select" class="mt-6">Select language</label>
 <div class="flex-shrink w-1/3 inline-block relative mt-2">
     <select class="form-select">
@@ -138,22 +80,11 @@ For predetermined options.
         <option>Spanish</option>
     </select>
 </div>
-
-<br>
-
-{% highlight html %}
-<label for="select" class="mt-6">Select language</label>
-<div class="flex-shrink w-1/3 inline-block relative mt-2">
-    <select class="form-select">
-        <option>English</option>
-        <option>French</option>
-        <option>Spanish</option>
-    </select>
-</div>
-{% endhighlight %}
+{{< /example >}}
 
 ## Checkbox
 
+{{< example >}}
 <div class="flex flex-col">
     <div class="inline-flex items-center">
         <input type="checkbox" class="form-checkbox" name="checkbox-group">
@@ -168,28 +99,11 @@ For predetermined options.
         <span class="ml-2">Checkbox 3</span>
     </div>
 </div>
-
-<br>
-
-{% highlight html %}
-<div class="flex flex-col">
-    <div class="inline-flex items-center">
-        <input type="checkbox" class="form-checkbox" name="checkbox-group">
-        <span class="ml-2">Checkbox 1</span>
-    </div>
-    <div class="inline-flex items-center">
-        <input type="checkbox" class="form-checkbox" name="checkbox-group">
-        <span class="ml-2">Checkbox 2</span>
-    </div>
-    <div class="inline-flex items-center">
-        <input type="checkbox" class="form-checkbox" name="checkbox-group">
-        <span class="ml-2">Checkbox 3</span>
-    </div>
-</div>
-{% endhighlight %}
+{{< /example >}}
 
 ## Radio button
 
+{{< example >}}
 <div class="flex flex-col">
     <div class="inline-flex items-center">
         <input type="radio" class="form-radio" name="radio-group">
@@ -204,31 +118,12 @@ For predetermined options.
         <span class="ml-2">Radio 3</span>
     </div>
 </div>
-
-<br>
-
-{% highlight html %}
-<div class="flex flex-col">
-    <div class="inline-flex items-center">
-        <input type="radio" class="form-radio" name="radio-group">
-        <span class="ml-2">Radio 1</span>
-    </div>
-    <div class="inline-flex items-center">
-        <input type="radio" class="form-radio" name="radio-group">
-        <span class="ml-2">Radio 2</span>
-    </div>
-    <div class="inline-flex items-center">
-        <input type="radio" class="form-radio" name="radio-group">
-        <span class="ml-2">Radio 3</span>
-    </div>
-</div>
-{% endhighlight %}
+{{< /example >}}
 
 ## Toggle/ switch
 Refers to enabling or disabling options.
 
-<br>
-
+{{< example >}}
 <div>
     <div class="toggle">
         <input type="checkbox" name="toggle" id="toggle" class="toggle-checkbox" />
@@ -236,26 +131,15 @@ Refers to enabling or disabling options.
     </div>
     <label for="toggle">Toggle</label>
 </div>
-
-<br>
-
-{% highlight html %}
-<div>
-    <div class="toggle">
-        <input type="checkbox" name="toggle" id="toggle" class="toggle-checkbox" />
-        <label for="toggle" class="toggle-label"></label>
-    </div>
-    <label for="toggle">Toggle</label>
-</div>
-{% endhighlight %}
+{{< /example >}}
 
 ## Search
-### Regular search
-![Regular search](../assets/regular-search.gif)
 
-<br>
-HTML
-{% highlight html %}
+### Regular search
+
+![Regular search](/assets/regular-search.gif)
+
+{{< example >}}
 <label for="search">Regular search</label>
 <div id="search" class="search mr-6 mb-8">
     <input type="search" onfocus="addBlueToSearchIcon('search-icon')"
@@ -267,14 +151,11 @@ HTML
         <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
     </svg>
 </div>
-{% endhighlight %}
-
-<br>
+{{< /example >}}
 
 JavaScript
 
-{% highlight javascript %}
-
+```javascript
 function addBlueToSearchIcon(id) {
     let searchIcon = document.getElementById(id);
     searchIcon.classList.add("text-gnome-blue-500");
@@ -284,17 +165,14 @@ function removeBlueFromSearchIcon(id) {
     let searchIcon = document.getElementById(id);
     searchIcon.classList.remove("text-gnome-blue-500");
 }
-
-{% endhighlight %}
-
-<br>
+```
 
 ### Collapsable search
-![Collapsable search](../assets/collapsable-search.gif)
 
-<br>
+![Collapsable search](/assets/collapsable-search.gif)
 
-{% highlight html %}
+<!-- Not using example here as it has problems rendering -->
+```html
 <label for="search" class="mt-8">Collapsed search</label>
 <div id="search" class="search mr-6 mb-8">
     <input type="search" id="collapsable-search" onfocus="addBlueToSearchIcon('collapsable-search-icon')"
@@ -308,12 +186,11 @@ function removeBlueFromSearchIcon(id) {
         <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
     </svg>
 </div>
-{% endhighlight %}
-
-<br>
+```
 
 JavaScript
-{% highlight javascript %}
+
+```javascript
 function toggleSearchInputDisplay(id) {
     let collapsableSearch = document.getElementById(id);
     console.log(collapsableSearch.style.display);
@@ -353,4 +230,4 @@ function removeBlueFromSearchIcon(id) {
     let searchIcon = document.getElementById(id);
     searchIcon.classList.remove("text-gnome-blue-500");
 }
-{% endhighlight %}
+```

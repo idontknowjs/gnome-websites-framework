@@ -1,0 +1,20 @@
+<div class="GNOMEUIEXAMPLE"></div>
+{{ if not (eq (.Get 0) "nocode") }}
+    {{ highlight (trim .Inner "\n") "html" "" }}
+{{ end }}
+<script>
+    {
+        let elements = document.getElementsByClassName('GNOMEUIEXAMPLE');
+        elements[elements.length - 1].attachShadow({
+            mode: 'closed'
+        }).innerHTML = `
+            <style>
+                @import url('/gnomeui.min.css');
+                :host {
+                    all: initial;
+                }
+            </style>
+            {{ .Inner }}
+        `;
+    }
+</script>
