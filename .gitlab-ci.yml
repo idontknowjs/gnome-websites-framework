@@ -4,7 +4,7 @@ stages:
   - build
   - deploy
 
-build:
+build:ui:
   stage: build
   script:
     - npm ci
@@ -17,16 +17,22 @@ build:
   only:
     - master
 
-pages:
+build:hugo:
   image: registry.gitlab.com/pages/hugo/hugo_extended
-  stage: deploy
+  stage: build
   script:
     - cp dist/index.min.css "documentation/static/gnomeui.min.css"
     - hugo -s documentation
   artifacts:
     paths:
       - documentation/public
-  only:
-    - master
 
-
+pages:
+  stage: deploy
+  script:
+    - mv documentation/public public
+  artifacts:
+    paths:
+      - public
+    only:
+      - master
