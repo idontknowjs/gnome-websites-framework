@@ -19,3 +19,4 @@ disableKinds = ['taxonomy', 'taxonomyTerm']
 [params]
     BookTheme = 'light'
     BookComments = false
+    # BookLogo = 'logo.png'
