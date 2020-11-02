@@ -151,32 +151,28 @@ Refers to enabling or disabling options.
         <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
     </svg>
 </div>
+<script>
+    function addBlueToSearchIcon(id) {
+        let searchIcon = document.getElementById(id);
+        searchIcon.classList.add("text-gnome-blue-500");
+    }
+
+    function removeBlueFromSearchIcon(id) {
+        let searchIcon = document.getElementById(id);
+        searchIcon.classList.remove("text-gnome-blue-500");
+    }
+</script>
 {{< /example >}}
-
-JavaScript
-
-```javascript
-function addBlueToSearchIcon(id) {
-    let searchIcon = document.getElementById(id);
-    searchIcon.classList.add("text-gnome-blue-500");
-}
-
-function removeBlueFromSearchIcon(id) {
-    let searchIcon = document.getElementById(id);
-    searchIcon.classList.remove("text-gnome-blue-500");
-}
-```
 
 ### Collapsable search
 
 ![Collapsable search](/assets/collapsable-search.gif)
 
-<!-- Not using example here as it has problems rendering -->
-```html
+{{< example >}}
 <label for="search" class="mt-8">Collapsed search</label>
 <div id="search" class="search mr-6 mb-8">
-    <input type="search" id="collapsable-search" onfocus="addBlueToSearchIcon('collapsable-search-icon')"
-        onfocusout="removeBlueFromSearchIcon('collapsable-search-icon')" class="w-48"
+    <input type="search" id="collapsable-search" onfocus="addBlueToCollapsableSearchIcon('collapsable-search-icon')"
+        onfocusout="removeBlueFromCollapsableSearchIcon('collapsable-search-icon')" class="w-48"
         placeholder="Search for content">
     <svg class="search-icon cursor-pointer" id="collapsable-search-icon"
         onclick="toggleSearchInputDisplay('collapsable-search')" xmlns="http://www.w3.org/2000/svg"
@@ -186,48 +182,45 @@ function removeBlueFromSearchIcon(id) {
         <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
     </svg>
 </div>
-```
-
-JavaScript
-
-```javascript
-function toggleSearchInputDisplay(id) {
-    let collapsableSearch = document.getElementById(id);
-    console.log(collapsableSearch.style.display);
-    if (collapsableSearch.style.display === "block") {
-        hideSearchInput(id);
-    } else {
-        console.log("displaying");
-        collapsableSearch.style.display = "block";
-        collapsableSearch.focus();
-        addBlueToSearchIcon(id + "-icon");
+<script>
+    function toggleSearchInputDisplay(id) {
+        let collapsableSearch = document.getElementById(id);
+        console.log(collapsableSearch.style.display);
+        if (collapsableSearch.style.display === "block") {
+            hideSearchInput(id);
+        } else {
+            console.log("displaying");
+            collapsableSearch.style.display = "block";
+            collapsableSearch.focus();
+            addBlueToCollapsableSearchIcon(id + "-icon");
+        }
     }
-}
 
-function hideSearchInput(id) {
-    let collapsableSearch = document.getElementById(id);
-    removeBlueFromSearchIcon(id + "-icon");
-    if (!collapsableSearch.value) {
-        collapsableSearch.style.display = "none";
+    function hideSearchInput(id) {
+        let collapsableSearch = document.getElementById(id);
+        removeBlueFromCollapsableSearchIcon(id + "-icon");
+        if (!collapsableSearch.value) {
+            collapsableSearch.style.display = "none";
+        }
     }
-}
 
-function toggleSearchIconColor(id) {
-    let searchIcon = document.getElementById(id);
-    if (searchIcon.classList.contains("text-gnome-blue-500")) {
-        removeBlueFromSearchIcon(id);
-    } else {
-        addBlueToSearchIcon(id);
+    function toggleSearchIconColor(id) {
+        let searchIcon = document.getElementById(id);
+        if (searchIcon.classList.contains("text-gnome-blue-500")) {
+            removeBlueFromCollapsableSearchIcon(id);
+        } else {
+            addBlueToCollapsableSearchIcon(id);
+        }
     }
-}
 
-function addBlueToSearchIcon(id) {
-    let searchIcon = document.getElementById(id);
-    searchIcon.classList.add("text-gnome-blue-500");
-}
+    function addBlueToCollapsableSearchIcon(id) {
+        let searchIcon = document.getElementById(id);
+        searchIcon.classList.add("text-gnome-blue-500");
+    }
 
-function removeBlueFromSearchIcon(id) {
-    let searchIcon = document.getElementById(id);
-    searchIcon.classList.remove("text-gnome-blue-500");
-}
-```
+    function removeBlueFromCollapsableSearchIcon(id) {
+        let searchIcon = document.getElementById(id);
+        searchIcon.classList.remove("text-gnome-blue-500");
+    }
+</script>
+{{< /example >}}
