@@ -1,0 +1,22 @@
+baseURL = "http://example.org/"
+languageCode = "en-us"
+title = "GNOME UI Docs"
+
+author = "The GNOME Foundation"
+
+theme = "book"
+
+copyright = "©{year}"
+enableEmoji = true
+paginate = 12
+rssLimit = 1000
+
+disableKinds = ['taxonomy', 'taxonomyTerm']
+
+[outputs]
+    home = ["HTML", "RSS"]
+
+[params]
+    BookTheme = 'light'
+    BookComments = false
+    # BookLogo = 'logo.png'

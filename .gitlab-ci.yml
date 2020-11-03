@@ -1,10 +1,10 @@
-image: node:latest
-
 stages:
   - build
+  - hugo
   - deploy
 
-build:
+build:ui:
+  image: node:latest
   stage: build
   script:
     - npm ci
@@ -14,23 +14,23 @@ build:
       - dist
       - samples
       - assets
-  only:
-    - master
+
+build:hugo:
+  image: registry.gitlab.com/pages/hugo/hugo_extended
+  stage: hugo
+  script:
+    - cp dist/index.min.css "documentation/static/gnomeui.min.css"
+    - hugo -s documentation
+  artifacts:
+    paths:
+      - documentation/public
 
 pages:
-  image: ruby:2.7
   stage: deploy
   script:
-    - gem install bundler
-    - bundle install
-    - mkdir public documentation/_sass/custom/
-    - cp -r dist assets samples/ public/
-    - cp dist/index.css "documentation/_sass/custom/custom.scss"
-    - bundle exec jekyll build -s documentation/ -d public/
+    - mv documentation/public public
   artifacts:
     paths:
       - public
   only:
     - master
-
-

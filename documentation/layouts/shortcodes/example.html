@@ -1,0 +1,35 @@
+{{ $uid := md5 .Inner }}
+{{ $utemplFunc := delimit (slice "templFunc" $uid) "_" }}
+{{ $ushadow := delimit (slice "shadowDocument" $uid) "_" }}
+{{ $ushadowDot := delimit (slice $ushadow ".") "" }}
+<template id="GNOMEUIEXAMPLE-TEMPLATE-{{ $uid }}">
+    <script>
+        var {{ $ushadow | safeJS }} = null;
+        function {{ $utemplFunc | safeJS }}() {
+            {{ $ushadow | safeJS }} = this;
+        }
+    </script>
+    <style onload="{{ $utemplFunc | safeJS }}.apply(this.getRootNode())">
+        @import url('/gnomeui.min.css');
+        :host {
+            all: initial;
+        }
+    </style>
+    <div style="margin-bottom: 24px; min-height: 50px;">
+        {{ replace .Inner "document." $ushadowDot | safeHTML }}
+    </div>
+</template>
+<div id="GNOMEUIEXAMPLE-{{ $uid }}"></div>
+{{ if not (eq (.Get 0) "nocode") }}
+    {{ highlight (trim .Inner "\n") "html" "" }}
+{{ end }}
+<script>
+    {
+        let element = document.getElementById('GNOMEUIEXAMPLE-{{ $uid }}');
+        let template = document.getElementById('GNOMEUIEXAMPLE-TEMPLATE-{{ $uid }}')
+        let shadow = element.attachShadow({
+            mode: 'closed'
+        });
+        shadow.appendChild(template.content.cloneNode(true))
+    }
+</script>
