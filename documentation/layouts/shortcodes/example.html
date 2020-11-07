@@ -6,12 +6,14 @@
     <script>
         var {{ $ushadow | safeJS }} = null;
         function {{ $utemplFunc | safeJS }}() {
+            console.log(this);
+            console.log('>>>>>>>>>>>>>>>>>>>>>>>>>>>');
             {{ $ushadow | safeJS }} = this;
         }
     </script>
-    <link rel="stylesheet" href="/gnomeui.min.css" media="all">
-    <style onload="{{ $utemplFunc | safeJS }}.apply(this.getRootNode())">
-    </style>
+    <link
+        onload="{{ $utemplFunc | safeJS }}.apply(this.getRootNode())"
+        rel="stylesheet" href="/gnomeui.min.css" media="all" />
     <div style="margin-bottom: 24px; min-height: 50px;">
         {{ replace .Inner "document." $ushadowDot | safeHTML }}
     </div>
@@ -25,7 +27,7 @@
         let element = document.getElementById('GNOMEUIEXAMPLE-{{ $uid }}');
         let template = document.getElementById('GNOMEUIEXAMPLE-TEMPLATE-{{ $uid }}')
         let shadow = element.attachShadow({
-            mode: 'closed'
+            mode: 'open'
         });
         shadow.appendChild(template.content.cloneNode(true))
     }
