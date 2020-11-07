@@ -6,8 +6,6 @@
     <script>
         var {{ $ushadow | safeJS }} = null;
         function {{ $utemplFunc | safeJS }}() {
-            console.log(this);
-            console.log('>>>>>>>>>>>>>>>>>>>>>>>>>>>');
             {{ $ushadow | safeJS }} = this;
         }
     </script>
