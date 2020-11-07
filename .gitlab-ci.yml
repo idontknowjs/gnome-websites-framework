@@ -20,7 +20,9 @@ build:hugo:
   stage: build:docs
   script:
     - cp dist/index.min.css "documentation/static/gnomeui.min.css"
-    - hugo -s documentation
+    - hugo -s documentation --minify
+  variables:
+    GIT_SUBMODULE_STRATEGY: recursive
   dependencies:
     - build:ui
   artifacts:
@@ -30,8 +32,7 @@ build:hugo:
 pages:
   stage: deploy:docs
   script:
-    - mkdir public
-    - cp -r dist assets documentation/public/ public/
+    - mv documentation/public public/
   artifacts:
     paths:
       - public

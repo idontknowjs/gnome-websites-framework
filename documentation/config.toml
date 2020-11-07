@@ -1,4 +1,4 @@
-baseURL = "http://example.org/"
+relativeurls = true
 languageCode = "en-us"
 title = "GNOME UI Docs"
 

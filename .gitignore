@@ -1,22 +1,22 @@
 # See http://help.github.com/ignore-files/ for more about ignoring files.
 
-# compiled output
+# Build output
 /dist
 /tmp
 /out-tsc
 /public
 
-# IDE - VSCode
+# VScode
 .vscode/*
 !.vscode/settings.json
 !.vscode/tasks.json
 !.vscode/launch.json
 !.vscode/extensions.json
 
-# IDE - IntelliJ
+# IntelliJ
 .idea
 
-# misc
+# Misc
 .sass-cache
 connect.lock
 typings
@@ -28,24 +28,15 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-
-# Dependency directories
+# Dependencies
 node_modules/
 jspm_packages/
 
-# Optional npm cache directory
+# Cache directory
 .npm
 
-# dotenv environment variables file
+# Environment files
 .env
-
-# Jekyll files
-_site
-.sass-cache
-.jekyll-cache
-.jekyll-metadata
-vendor
-custom.scss
 
 # Hugo files
 documentation/static/gnomeui.min.css
