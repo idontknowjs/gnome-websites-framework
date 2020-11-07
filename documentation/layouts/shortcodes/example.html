@@ -9,11 +9,8 @@
             {{ $ushadow | safeJS }} = this;
         }
     </script>
+    <link rel="stylesheet" href="/gnomeui.min.css" media="all">
     <style onload="{{ $utemplFunc | safeJS }}.apply(this.getRootNode())">
-        @import url('/gnomeui.min.css');
-        :host {
-            all: initial;
-        }
     </style>
     <div style="margin-bottom: 24px; min-height: 50px;">
         {{ replace .Inner "document." $ushadowDot | safeHTML }}
