@@ -21,6 +21,10 @@ The project documentation is placed in the `documentation` folder.
     ```sh
     git clone --recurse-submodules https://gitlab.gnome.org/Teams/Engagement/websites/general-website-resources.git
     ```
+- Then go to the directory of the repository you cloned
+    ```sh
+    cd general-website-resources
+    ```
 - Install the dependencies
     ```sh
     npm ci
