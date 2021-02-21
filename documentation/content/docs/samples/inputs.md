@@ -22,7 +22,6 @@ has_children: true
                     <input type="text" class="mt-2" id="last-name" placeholder="Write your last name here">
                 </div>
 
-
             </div>
 
             <label for="email" class="mt-6">Email</label>
@@ -42,7 +41,7 @@ has_children: true
 
             <label for="select" class="mt-6">Select language</label>
             <div class="flex-shrink w-1/3 inline-block relative mt-2">
-                <select class="form-select">
+                <select class="form-select cursor-pointer">
                     <option>English</option>
                     <option>French</option>
                     <option>Spanish</option>
@@ -51,30 +50,30 @@ has_children: true
 
             <label class="mt-6 items-center flex flex-col mr-auto">
                 <div class="inline-flex items-center">
-                    <input type="checkbox" class="form-checkbox" name="checkbox-group">
+                    <input type="checkbox" class="form-checkbox cursor-pointer" name="checkbox-group">
                     <span class="ml-2">Checkbox 1</span>
                 </div>
                 <div class="inline-flex items-center">
-                    <input type="checkbox" class="form-checkbox" name="checkbox-group">
+                    <input type="checkbox" class="form-checkbox cursor-pointer" name="checkbox-group">
                     <span class="ml-2">Checkbox 2</span>
                 </div>
                 <div class="inline-flex items-center">
-                    <input type="checkbox" class="form-checkbox" name="checkbox-group">
+                    <input type="checkbox" class="form-checkbox cursor-pointer" name="checkbox-group">
                     <span class="ml-2">Checkbox 3</span>
                 </div>
             </label>
 
             <label class="mt-6 items-center flex flex-col mr-auto">
                 <div class="inline-flex items-center">
-                    <input type="radio" class="form-radio" name="radio-group">
+                    <input type="radio" class="form-radio cursor-pointer" name="radio-group">
                     <span class="ml-2">Radio 1</span>
                 </div>
                 <div class="inline-flex items-center">
-                    <input type="radio" class="form-radio" name="radio-group">
+                    <input type="radio" class="form-radio cursor-pointer" name="radio-group">
                     <span class="ml-2">Radio 2</span>
                 </div>
                 <div class="inline-flex items-center">
-                    <input type="radio" class="form-radio" name="radio-group">
+                    <input type="radio" class="form-radio cursor-pointer" name="radio-group">
                     <span class="ml-2">Radio 3</span>
                 </div>
             </label>
