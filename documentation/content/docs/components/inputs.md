@@ -74,7 +74,7 @@ For predetermined options.
 {{< example >}}
 <label for="select" class="mt-6">Select language</label>
 <div class="flex-shrink w-1/3 inline-block relative mt-2">
-    <select class="form-select">
+    <select class="form-select cursor-pointer">
         <option>English</option>
         <option>French</option>
         <option>Spanish</option>
@@ -87,15 +87,15 @@ For predetermined options.
 {{< example >}}
 <div class="flex flex-col">
     <div class="inline-flex items-center">
-        <input type="checkbox" class="form-checkbox" name="checkbox-group">
+        <input type="checkbox" class="form-checkbox cursor-pointer" name="checkbox-group">
         <span class="ml-2">Checkbox 1</span>
     </div>
     <div class="inline-flex items-center">
-        <input type="checkbox" class="form-checkbox" name="checkbox-group">
+        <input type="checkbox" class="form-checkbox cursor-pointer" name="checkbox-group">
         <span class="ml-2">Checkbox 2</span>
     </div>
     <div class="inline-flex items-center">
-        <input type="checkbox" class="form-checkbox" name="checkbox-group">
+        <input type="checkbox" class="form-checkbox cursor-pointer" name="checkbox-group">
         <span class="ml-2">Checkbox 3</span>
     </div>
 </div>
@@ -106,15 +106,15 @@ For predetermined options.
 {{< example >}}
 <div class="flex flex-col">
     <div class="inline-flex items-center">
-        <input type="radio" class="form-radio" name="radio-group">
+        <input type="radio" class="form-radio cursor-pointer" name="radio-group">
         <span class="ml-2">Radio 1</span>
     </div>
     <div class="inline-flex items-center">
-        <input type="radio" class="form-radio" name="radio-group">
+        <input type="radio" class="form-radio cursor-pointer" name="radio-group">
         <span class="ml-2">Radio 2</span>
     </div>
     <div class="inline-flex items-center">
-        <input type="radio" class="form-radio" name="radio-group">
+        <input type="radio" class="form-radio cursor-pointer" name="radio-group">
         <span class="ml-2">Radio 3</span>
     </div>
 </div>
