@@ -89,8 +89,8 @@ has_children: true
             <label for="search" class="mt-8">Default search</label>
             <div id="search" class="search mr-6 mb-8">
                 <input type="search" onfocus="addBlueToSearchIcon('search-icon')"
-                    onfocusout="removeBlueFromSearchIcon('search-icon')" class="w-48" placeholder="Search for content">
-                <svg class="search-icon" id="search-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                    onfocusout="removeBlueFromSearchIcon('search-icon')" class="w-52" placeholder="Search for content">
+                <svg class="search-icon ml-2" id="search-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                     viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                     stroke-linejoin="round" class="feather feather-search">
                     <circle cx="11" cy="11" r="8"></circle>
@@ -101,9 +101,9 @@ has_children: true
             <label for="search" class="mt-8">Collapsed search</label>
             <div id="search" class="search mr-6 mb-8">
                 <input type="search" id="collapsable-search" onfocus="addBlueToSearchIcon('collapsable-search-icon')"
-                    onfocusout="removeBlueFromSearchIcon('collapsable-search-icon')" class="w-48"
+                    onfocusout="removeBlueFromSearchIcon('collapsable-search-icon')" class="w-52"
                     placeholder="Search for content">
-                <svg class="search-icon cursor-pointer" id="collapsable-search-icon"
+                <svg class="search-icon cursor-pointer ml-2" id="collapsable-search-icon"
                     onclick="toggleSearchInputDisplay('collapsable-search')" xmlns="http://www.w3.org/2000/svg"
                     width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                     stroke-linecap="round" stroke-linejoin="round" class="feather feather-search">
