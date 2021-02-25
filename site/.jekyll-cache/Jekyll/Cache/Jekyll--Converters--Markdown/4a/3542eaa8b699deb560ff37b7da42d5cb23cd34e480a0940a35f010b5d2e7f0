@@ -1,0 +1,513 @@
+I"Uè<h1 class="no_toc" id="colors">Colors</h1>
+
+<h2 class="no_toc text-delta" id="table-of-contents">Table of contents</h2>
+
+<ol id="markdown-toc">
+  <li><a href="#black--white" id="markdown-toc-black--white">Black &amp; White</a></li>
+  <li><a href="#gnome-blue" id="markdown-toc-gnome-blue">GNOME Blue</a></li>
+  <li><a href="#gray" id="markdown-toc-gray">Gray</a></li>
+  <li><a href="#red" id="markdown-toc-red">Red</a></li>
+  <li><a href="#orange" id="markdown-toc-orange">Orange</a></li>
+  <li><a href="#yellow" id="markdown-toc-yellow">Yellow</a></li>
+  <li><a href="#green" id="markdown-toc-green">Green</a></li>
+  <li><a href="#turquoise" id="markdown-toc-turquoise">Turquoise</a></li>
+  <li><a href="#purple" id="markdown-toc-purple">Purple</a></li>
+</ol>
+
+<hr />
+<h2 id="black--white">Black &amp; White</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">Color value</th>
+      <th style="text-align: center">Font color class</th>
+      <th style="text-align: center">Background color class</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center"><span class="d-inline-block p-2 mr-1 v-align-middle bg-white shadow-md"></span> <code class="language-plaintext highlighter-rouge">white</code></td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">.text-white</code></td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">.bg-white</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><span class="d-inline-block p-2 mr-1 v-align-middle bg-black shadow-md"></span> <code class="language-plaintext highlighter-rouge">black</code></td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">.text-black</code></td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">.bg-black</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="gnome-blue">GNOME Blue</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">Color value</th>
+      <th style="text-align: center">Font color class</th>
+      <th style="text-align: center">Background color class</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center"><span class="d-inline-block p-2 mr-1 v-align-middle bg-gray-100 shadow-md"></span> <code class="language-plaintext highlighter-rouge">gnome-blue-100</code></td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">.text-gnome-blue-100</code></td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">.bg-gnome-blue-100</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><span class="d-inline-block p-2 mr-1 v-align-middle bg-gnome-blue-200 shadow-md"></span> <code class="language-plaintext highlighter-rouge">gnome-blue-200</code></td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">.text-gnome-blue-200</code></td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">.bg-gnome-blue-200</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><span class="d-inline-block p-2 mr-1 v-align-middle bg-gnome-blue-300 shadow-md"></span> <code class="language-plaintext highlighter-rouge">gnome-blue-300</code></td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">.text-gnome-blue-300</code></td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">.bg-gnome-blue-300</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><span class="d-inline-block p-2 mr-1 v-align-middle bg-gnome-blue-400 shadow-md"></span> <code class="language-plaintext highlighter-rouge">gnome-blue-400</code></td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">.text-gnome-blue-400</code></td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">.bg-gnome-blue-400</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><span class="d-inline-block p-2 mr-1 v-align-middle bg-gnome-blue-500 shadow-md"></span> <code class="language-plaintext highlighter-rouge">gnome-blue-500</code></td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">.text-gnome-blue-500</code></td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">.bg-gnome-blue-500</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><span class="d-inline-block p-2 mr-1 v-align-middle bg-gnome-blue-600 shadow-md"></span> <code class="language-plaintext highlighter-rouge">gnome-blue-600</code></td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">.text-gnome-blue-600</code></td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">.bg-gnome-blue-600</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><span class="d-inline-block p-2 mr-1 v-align-middle bg-gnome-blue-700 shadow-md"></span> <code class="language-plaintext highlighter-rouge">gnome-blue-700</code></td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">.text-gnome-blue-700</code></td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">.bg-gnome-blue-700</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><span class="d-inline-block p-2 mr-1 v-align-middle bg-gnome-blue-800 shadow-md"></span> <code class="language-plaintext highlighter-rouge">gnome-blue-800</code></td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">.text-gnome-blue-800</code></td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">.bg-gnome-blue-800</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><span class="d-inline-block p-2 mr-1 v-align-middle bg-gnome-blue-900 shadow-md"></span> <code class="language-plaintext highlighter-rouge">gnome-blue-900</code></td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">.text-gnome-blue-900</code></td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">.bg-gnome-blue-900</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="gray">Gray</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">Color value</th>
+      <th style="text-align: center">Font color class</th>
+      <th style="text-align: center">Background color class</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center"><span class="d-inline-block p-2 mr-1 v-align-middle bg-gray-100 shadow-md"></span> <code class="language-plaintext highlighter-rouge">gray-100</code></td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">.text-gray-100</code></td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">.bg-gray-100</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><span class="d-inline-block p-2 mr-1 v-align-middle bg-gray-200 shadow-md"></span> <code class="language-plaintext highlighter-rouge">gray-200</code></td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">.text-gray-200</code></td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">.bg-gray-200</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><span class="d-inline-block p-2 mr-1 v-align-middle bg-gray-300 shadow-md"></span> <code class="language-plaintext highlighter-rouge">gray-300</code></td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">.text-gray-300</code></td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">.bg-gray-300</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><span class="d-inline-block p-2 mr-1 v-align-middle bg-gray-400 shadow-md"></span> <code class="language-plaintext highlighter-rouge">gray-400</code></td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">.text-gray-400</code></td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">.bg-gray-400</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><span class="d-inline-block p-2 mr-1 v-align-middle bg-gray-500 shadow-md"></span> <code class="language-plaintext highlighter-rouge">gray-500</code></td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">.text-gray-500</code></td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">.bg-gray-500</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><span class="d-inline-block p-2 mr-1 v-align-middle bg-gray-600 shadow-md"></span> <code class="language-plaintext highlighter-rouge">gray-600</code></td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">.text-gray-600</code></td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">.bg-gray-600</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><span class="d-inline-block p-2 mr-1 v-align-middle bg-gray-700 shadow-md"></span> <code class="language-plaintext highlighter-rouge">gray-700</code></td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">.text-gray-700</code></td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">.bg-gray-700</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><span class="d-inline-block p-2 mr-1 v-align-middle bg-gray-800 shadow-md"></span> <code class="language-plaintext highlighter-rouge">gray-800</code></td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">.text-gray-800</code></td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">.bg-gray-800</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><span class="d-inline-block p-2 mr-1 v-align-middle bg-gray-900 shadow-md"></span> <code class="language-plaintext highlighter-rouge">gray-900</code></td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">.text-gray-900</code></td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">.bg-gray-900</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="red">Red</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">Color value</th>
+      <th style="text-align: center">Font color class</th>
+      <th style="text-align: center">Background color class</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center"><span class="d-inline-block p-2 mr-1 v-align-middle shadow-md" style="background-color: #FFF5F5;"></span> <code class="language-plaintext highlighter-rouge">red-100</code></td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">.text-red-100</code></td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">.bg-red-100</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><span class="d-inline-block p-2 mr-1 v-align-middle shadow-md" style="background-color: #FFC2C2;"></span> <code class="language-plaintext highlighter-rouge">red-200</code></td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">.text-red-200</code></td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">.bg-red-200</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><span class="d-inline-block p-2 mr-1 v-align-middle shadow-md" style="background-color: #FF8F90;"></span> <code class="language-plaintext highlighter-rouge">red-300</code></td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">.text-red-300</code></td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">.bg-red-300</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><span class="d-inline-block p-2 mr-1 v-align-middle bg-red-400 shadow-md"></span> <code class="language-plaintext highlighter-rouge">red-400</code></td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">.text-red-400</code></td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">.bg-red-400</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><span class="d-inline-block p-2 mr-1 v-align-middle bg-red-500 shadow-md"></span> <code class="language-plaintext highlighter-rouge">red-500</code></td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">.text-red-500</code></td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">.bg-red-500</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><span class="d-inline-block p-2 mr-1 v-align-middle bg-red-600 shadow-md"></span> <code class="language-plaintext highlighter-rouge">red-600</code></td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">.text-red-600</code></td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">.bg-red-600</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><span class="d-inline-block p-2 mr-1 v-align-middle bg-red-700 shadow-md"></span> <code class="language-plaintext highlighter-rouge">red-700</code></td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">.text-red-700</code></td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">.bg-red-700</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><span class="d-inline-block p-2 mr-1 v-align-middle bg-red-800 shadow-md"></span> <code class="language-plaintext highlighter-rouge">red-800</code></td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">.text-red-800</code></td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">.bg-red-800</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><span class="d-inline-block p-2 mr-1 v-align-middle bg-red-900 shadow-md"></span> <code class="language-plaintext highlighter-rouge">red-900</code></td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">.text-red-900</code></td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">.bg-red-900</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="orange">Orange</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">Color value</th>
+      <th style="text-align: center">Font color class</th>
+      <th style="text-align: center">Background color class</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center"><span class="d-inline-block p-2 mr-1 v-align-middle bg-orange-100 shadow-md"></span> <code class="language-plaintext highlighter-rouge">orange-100</code></td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">.text-orange-100</code></td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">.bg-orange-100</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><span class="d-inline-block p-2 mr-1 v-align-middle bg-orange-200 shadow-md"></span> <code class="language-plaintext highlighter-rouge">orange-200</code></td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">.text-orange-200</code></td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">.bg-orange-200</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><span class="d-inline-block p-2 mr-1 v-align-middle bg-orange-300 shadow-md"></span> <code class="language-plaintext highlighter-rouge">orange-300</code></td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">.text-orange-300</code></td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">.bg-orange-300</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><span class="d-inline-block p-2 mr-1 v-align-middle bg-orange-400 shadow-md"></span> <code class="language-plaintext highlighter-rouge">orange-400</code></td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">.text-orange-400</code></td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">.bg-orange-400</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><span class="d-inline-block p-2 mr-1 v-align-middle bg-orange-500 shadow-md"></span> <code class="language-plaintext highlighter-rouge">orange-500</code></td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">.text-orange-500</code></td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">.bg-orange-500</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><span class="d-inline-block p-2 mr-1 v-align-middle bg-orange-600 shadow-md"></span> <code class="language-plaintext highlighter-rouge">orange-600</code></td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">.text-orange-600</code></td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">.bg-orange-600</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><span class="d-inline-block p-2 mr-1 v-align-middle bg-orange-700 shadow-md"></span> <code class="language-plaintext highlighter-rouge">orange-700</code></td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">.text-orange-700</code></td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">.bg-orange-700</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><span class="d-inline-block p-2 mr-1 v-align-middle bg-orange-800 shadow-md"></span> <code class="language-plaintext highlighter-rouge">orange-800</code></td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">.text-orange-800</code></td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">.bg-orange-800</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><span class="d-inline-block p-2 mr-1 v-align-middle bg-orange-900 shadow-md"></span> <code class="language-plaintext highlighter-rouge">orange-900</code></td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">.text-orange-900</code></td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">.bg-orange-900</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="yellow">Yellow</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">Color value</th>
+      <th style="text-align: center">Font color class</th>
+      <th style="text-align: center">Background color class</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center"><span class="d-inline-block p-2 mr-1 v-align-middle shadow-md" style="background-color: #FFF4DB;"></span> <code class="language-plaintext highlighter-rouge">yellow-100</code></td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">.text-yellow-100</code></td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">.bg-yellow-100</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><span class="d-inline-block p-2 mr-1 v-align-middle shadow-md" style="background-color: #FFE5A8;"></span> <code class="language-plaintext highlighter-rouge">yellow-200</code></td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">.text-yellow-200</code></td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">.bg-yellow-200</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><span class="d-inline-block p-2 mr-1 v-align-middle shadow-md" style="background-color: #FFD575;"></span> <code class="language-plaintext highlighter-rouge">yellow-300</code></td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">.text-yellow-300</code></td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">.bg-yellow-300</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><span class="d-inline-block p-2 mr-1 v-align-middle bg-yellow-400 shadow-md"></span> <code class="language-plaintext highlighter-rouge">yellow-400</code></td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">.text-yellow-400</code></td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">.bg-yellow-400</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><span class="d-inline-block p-2 mr-1 v-align-middle bg-yellow-500 shadow-md"></span> <code class="language-plaintext highlighter-rouge">yellow-500</code></td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">.text-yellow-500</code></td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">.bg-yellow-500</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><span class="d-inline-block p-2 mr-1 v-align-middle bg-yellow-600 shadow-md"></span> <code class="language-plaintext highlighter-rouge">yellow-600</code></td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">.text-yellow-600</code></td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">.bg-yellow-600</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><span class="d-inline-block p-2 mr-1 v-align-middle bg-yellow-700 shadow-md"></span> <code class="language-plaintext highlighter-rouge">yellow-700</code></td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">.text-yellow-700</code></td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">.bg-yellow-700</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><span class="d-inline-block p-2 mr-1 v-align-middle bg-yellow-800 shadow-md"></span> <code class="language-plaintext highlighter-rouge">yellow-800</code></td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">.text-yellow-800</code></td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">.bg-yellow-800</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><span class="d-inline-block p-2 mr-1 v-align-middle bg-yellow-900 shadow-md"></span> <code class="language-plaintext highlighter-rouge">yellow-900</code></td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">.text-yellow-900</code></td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">.bg-yellow-900</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="green">Green</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">Color value</th>
+      <th style="text-align: center">Font color class</th>
+      <th style="text-align: center">Background color class</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center"><span class="d-inline-block p-2 mr-1 v-align-middle shadow-md" style="background-color: #F0F9E6;"></span> <code class="language-plaintext highlighter-rouge">green-100</code></td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">.text-green-100</code></td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">.bg-green-100</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><span class="d-inline-block p-2 mr-1 v-align-middle shadow-md" style="background-color: #D7EFBE;"></span> <code class="language-plaintext highlighter-rouge">green-200</code></td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">.text-green-200</code></td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">.bg-green-200</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><span class="d-inline-block p-2 mr-1 v-align-middle shadow-md" style="background-color: #BEE595;"></span> <code class="language-plaintext highlighter-rouge">green-300</code></td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">.text-green-300</code></td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">.bg-green-300</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><span class="d-inline-block p-2 mr-1 v-align-middle bg-green-400 shadow-md"></span> <code class="language-plaintext highlighter-rouge">green-400</code></td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">.text-green-400</code></td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">.bg-green-400</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><span class="d-inline-block p-2 mr-1 v-align-middle bg-green-500 shadow-md"></span> <code class="language-plaintext highlighter-rouge">green-500</code></td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">.text-green-500</code></td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">.bg-green-500</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><span class="d-inline-block p-2 mr-1 v-align-middle bg-green-600 shadow-md"></span> <code class="language-plaintext highlighter-rouge">green-600</code></td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">.text-green-600</code></td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">.bg-green-600</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><span class="d-inline-block p-2 mr-1 v-align-middle bg-green-700 shadow-md"></span> <code class="language-plaintext highlighter-rouge">green-700</code></td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">.text-green-700</code></td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">.bg-green-700</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><span class="d-inline-block p-2 mr-1 v-align-middle bg-green-800 shadow-md"></span> <code class="language-plaintext highlighter-rouge">green-800</code></td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">.text-green-800</code></td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">.bg-green-800</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><span class="d-inline-block p-2 mr-1 v-align-middle bg-green-900 shadow-md"></span> <code class="language-plaintext highlighter-rouge">green-900</code></td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">.text-green-900</code></td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">.bg-green-900</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="turquoise">Turquoise</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">Color value</th>
+      <th style="text-align: center">Font color class</th>
+      <th style="text-align: center">Background color class</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center"><span class="d-inline-block p-2 mr-1 v-align-middle bg-turquoise-100 shadow-md"></span> <code class="language-plaintext highlighter-rouge">turquoise-100</code></td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">.text-turquoise-100</code></td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">.bg-turquoise-100</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><span class="d-inline-block p-2 mr-1 v-align-middle bg-turquoise-200 shadow-md"></span> <code class="language-plaintext highlighter-rouge">turquoise-200</code></td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">.text-turquoise-200</code></td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">.bg-turquoise-200</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><span class="d-inline-block p-2 mr-1 v-align-middle bg-turquoise-300 shadow-md"></span> <code class="language-plaintext highlighter-rouge">turquoise-300</code></td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">.text-turquoise-300</code></td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">.bg-turquoise-300</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><span class="d-inline-block p-2 mr-1 v-align-middle bg-turquoise-400 shadow-md"></span> <code class="language-plaintext highlighter-rouge">turquoise-400</code></td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">.text-turquoise-400</code></td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">.bg-turquoise-400</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><span class="d-inline-block p-2 mr-1 v-align-middle bg-turquoise-500 shadow-md"></span> <code class="language-plaintext highlighter-rouge">turquoise-500</code></td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">.text-turquoise-500</code></td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">.bg-turquoise-500</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><span class="d-inline-block p-2 mr-1 v-align-middle bg-turquoise-600 shadow-md"></span> <code class="language-plaintext highlighter-rouge">turquoise-600</code></td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">.text-turquoise-600</code></td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">.bg-turquoise-600</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><span class="d-inline-block p-2 mr-1 v-align-middle bg-turquoise-700 shadow-md"></span> <code class="language-plaintext highlighter-rouge">turquoise-700</code></td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">.text-turquoise-700</code></td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">.bg-turquoise-700</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><span class="d-inline-block p-2 mr-1 v-align-middle bg-turquoise-800 shadow-md"></span> <code class="language-plaintext highlighter-rouge">turquoise-800</code></td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">.text-turquoise-800</code></td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">.bg-turquoise-800</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><span class="d-inline-block p-2 mr-1 v-align-middle bg-turquoise-900 shadow-md"></span> <code class="language-plaintext highlighter-rouge">turquoise-900</code></td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">.text-turquoise-900</code></td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">.bg-turquoise-900</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="purple">Purple</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">Color value</th>
+      <th style="text-align: center">Font color class</th>
+      <th style="text-align: center">Background color class</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center"><span class="d-inline-block p-2 mr-1 v-align-middle shadow-md" style="background-color: #FAEBF9;"></span> <code class="language-plaintext highlighter-rouge">purple-100</code></td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">.text-purple-100</code></td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">.bg-purple-100</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><span class="d-inline-block p-2 mr-1 v-align-middle shadow-md" style="background-color: #EFC3EC;"></span> <code class="language-plaintext highlighter-rouge">purple-200</code></td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">.text-purple-200</code></td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">.bg-purple-200</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><span class="d-inline-block p-2 mr-1 v-align-middle shadow-md" style="background-color: #E49ADF;"></span> <code class="language-plaintext highlighter-rouge">purple-300</code></td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">.text-purple-300</code></td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">.bg-purple-300</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><span class="d-inline-block p-2 mr-1 v-align-middle bg-purple-400 shadow-md"></span> <code class="language-plaintext highlighter-rouge">purple-400</code></td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">.text-purple-400</code></td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">.bg-purple-400</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><span class="d-inline-block p-2 mr-1 v-align-middle bg-purple-500 shadow-md"></span> <code class="language-plaintext highlighter-rouge">purple-500</code></td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">.text-purple-500</code></td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">.bg-purple-500</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><span class="d-inline-block p-2 mr-1 v-align-middle bg-purple-600 shadow-md"></span> <code class="language-plaintext highlighter-rouge">purple-600</code></td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">.text-purple-600</code></td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">.bg-purple-600</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><span class="d-inline-block p-2 mr-1 v-align-middle bg-purple-700 shadow-md"></span> <code class="language-plaintext highlighter-rouge">purple-700</code></td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">.text-purple-700</code></td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">.bg-purple-700</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><span class="d-inline-block p-2 mr-1 v-align-middle bg-purple-800 shadow-md"></span> <code class="language-plaintext highlighter-rouge">purple-800</code></td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">.text-purple-800</code></td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">.bg-purple-800</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><span class="d-inline-block p-2 mr-1 v-align-middle bg-purple-900 shadow-md"></span> <code class="language-plaintext highlighter-rouge">purple-900</code></td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">.text-purple-900</code></td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">.bg-purple-900</code></td>
+    </tr>
+  </tbody>
+</table>
+:ET

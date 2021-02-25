@@ -1,0 +1,203 @@
+I"F<h1 class="no_toc" id="buttons">Buttons</h1>
+
+<h2 class="no_toc text-delta" id="table-of-contents">Table of contents</h2>
+
+<ol id="markdown-toc">
+  <li><a href="#default" id="markdown-toc-default">Default</a></li>
+  <li><a href="#outline" id="markdown-toc-outline">Outline</a></li>
+  <li><a href="#squared" id="markdown-toc-squared">Squared</a></li>
+  <li><a href="#other-sizes" id="markdown-toc-other-sizes">Other sizes</a></li>
+  <li><a href="#disabled" id="markdown-toc-disabled">Disabled</a></li>
+  <li><a href="#customized-width" id="markdown-toc-customized-width">Customized width</a></li>
+  <li><a href="#links" id="markdown-toc-links">Links</a></li>
+</ol>
+
+<hr />
+<p><br /></p>
+
+<p>Buttons are used to communicate actions users can take. The default buttons color is <code class="language-plaintext highlighter-rouge">gnome-blue-500</code>, which should be related to primary actions. On secondary or tertiary actions, <code class="language-plaintext highlighter-rouge">orange</code> combined with other kinds of buttons different than default, like <a href="#outline">outlined</a> or <a href="#squared">squared</a>, are encouraged.</p>
+
+<p><br /></p>
+
+<p>Colors in buttons are also related to communicating messages to the users about what they are doing. When the action the user can take is dangerous, using <code class="language-plaintext highlighter-rouge">red</code> is a good fit, as much as <code class="language-plaintext highlighter-rouge">yellow</code> for attention or <code class="language-plaintext highlighter-rouge">green</code> for confirmation/ success.</p>
+
+<h2 id="default">Default</h2>
+
+<p>Use the <code class="language-plaintext highlighter-rouge">btn</code> class for a default button, and combine it with other colors if a color different than <code class="language-plaintext highlighter-rouge">gnome-blue</code> is needed. The <code class="language-plaintext highlighter-rouge">btn</code> class should always be used on the buttons variants described on the next topics, except for the <code class="language-plaintext highlighter-rouge">links</code>.</p>
+
+<p><br /></p>
+
+<div class="container flex-grow">
+    <button class="btn mr-2 my-2">GNOME Blue</button>
+    <button class="btn red mr-2 my-2">Red</button>
+    <button class="btn orange mr-2 my-2">Orange</button>
+    <button class="btn yellow mr-2 my-2">Yellow</button>
+    <button class="btn green my-2">Green</button>
+</div>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container flex-grow"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn mr-2 my-2"</span><span class="nt">&gt;</span>GNOME Blue<span class="nt">&lt;/button&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn red mr-2 my-2"</span><span class="nt">&gt;</span>Red<span class="nt">&lt;/button&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn orange mr-2 my-2"</span><span class="nt">&gt;</span>Orange<span class="nt">&lt;/button&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn yellow mr-2 my-2"</span><span class="nt">&gt;</span>Yellow<span class="nt">&lt;/button&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn green my-2"</span><span class="nt">&gt;</span>Green<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+
+<h2 id="outline">Outline</h2>
+
+<p>Outline buttons are used for secondary or tertiary actions. To use this variation, add <code class="language-plaintext highlighter-rouge">outline</code> class to the button and combine it with other colors.</p>
+
+<p><br /></p>
+
+<div class="container flex-grow">
+    <button class="btn outline mr-2 my-2">GNOME Blue</button>
+    <button class="btn outline-red mr-2 my-2">Red</button>
+    <button class="btn outline-orange mr-2 my-2">Orange</button>
+    <button class="btn outline-yellow mr-2 my-2">Yellow</button>
+    <button class="btn outline-green mr-2 my-2">Green</button>
+</div>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container flex-grow"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn outline mr-2 my-2"</span><span class="nt">&gt;</span>GNOME Blue<span class="nt">&lt;/button&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn outline-red mr-2 my-2"</span><span class="nt">&gt;</span>Red<span class="nt">&lt;/button&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn outline-orange mr-2 my-2"</span><span class="nt">&gt;</span>Orange<span class="nt">&lt;/button&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn outline-yellow mr-2 my-2"</span><span class="nt">&gt;</span>Yellow<span class="nt">&lt;/button&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn outline-green mr-2 my-2"</span><span class="nt">&gt;</span>Green<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+
+<h2 id="squared">Squared</h2>
+
+<p>Usually, squared buttons give a more serious feeling to the website. It can be used by default on the website (even combined with other variants like outlined) or it can be used in specific spots, but it is not recommended to be used next to a rounded button - it may cause inconsistency. Use <code class="language-plaintext highlighter-rouge">squared</code> class to produce this variant.</p>
+
+<p><br /></p>
+
+<div class="container flex-grow">
+    <button class="btn squared mr-2 my-2">GNOME Blue</button>
+    <button class="btn red squared mr-2 my-2">Red</button>
+    <button class="btn outline-orange squared mr-2 my-2">Orange</button>
+    <button class="btn outline-yellow squared mr-2 my-2">Yellow</button>
+    <button class="btn outline-green squared mr-2 my-2">Green</button>
+</div>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container flex-grow"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn squared mr-2 my-2"</span><span class="nt">&gt;</span>GNOME Blue<span class="nt">&lt;/button&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn red squared mr-2 my-2"</span><span class="nt">&gt;</span>Red<span class="nt">&lt;/button&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn outline-orange squared mr-2 my-2"</span><span class="nt">&gt;</span>Orange<span class="nt">&lt;/button&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn outline-yellow squared mr-2 my-2"</span><span class="nt">&gt;</span>Yellow<span class="nt">&lt;/button&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn outline-green squared mr-2 my-2"</span><span class="nt">&gt;</span>Green<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+
+<h2 id="other-sizes">Other sizes</h2>
+
+<p>Larger buttons can be used to draw user attention, while smaller buttons can be used to fit inside smaller spaces. Add <code class="language-plaintext highlighter-rouge">small</code> or <code class="language-plaintext highlighter-rouge">large</code> classes to produce buttons in different sizes, but be careful not to create inconsistency by placing buttons with different sizes close to each other.</p>
+
+<p><br /></p>
+
+<div class="container flex-grow">
+    <button class="btn small mr-2 my-2">Small</button>
+    <button class="btn red small mr-2 my-2">Small</button>
+    <button class="btn outline-orange small squared mr-2 my-2">Small</button>
+    <button class="btn outline-yellow small squared mr-2 my-2">Small</button>
+    <button class="btn outline-green small mr-2 my-2">Small</button>
+</div>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container flex-grow"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn small mr-2 my-2"</span><span class="nt">&gt;</span>Small<span class="nt">&lt;/button&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn red small mr-2 my-2"</span><span class="nt">&gt;</span>Small<span class="nt">&lt;/button&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn outline-orange small squared mr-2 my-2"</span><span class="nt">&gt;</span>Small<span class="nt">&lt;/button&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn outline-yellow small squared mr-2 my-2"</span><span class="nt">&gt;</span>Small<span class="nt">&lt;/button&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn outline-green small mr-2 my-2"</span><span class="nt">&gt;</span>Small<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+
+<p><br /></p>
+
+<div class="container flex-grow">
+    <button class="btn large mr-2 my-2">Large</button>
+    <button class="btn red large mr-2 my-2">Large</button>
+    <button class="btn outline-orange large squared mr-2 my-2">Large</button>
+    <button class="btn outline-yellow large squared mr-2 my-2">Large</button>
+    <button class="btn outline-green large mr-2 my-2">Large</button>
+</div>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container flex-grow"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn large mr-2 my-2"</span><span class="nt">&gt;</span>Large<span class="nt">&lt;/button&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn red large mr-2 my-2"</span><span class="nt">&gt;</span>Large<span class="nt">&lt;/button&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn outline-orange large squared mr-2 my-2"</span><span class="nt">&gt;</span>Large<span class="nt">&lt;/button&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn outline-yellow large squared mr-2 my-2"</span><span class="nt">&gt;</span>Large<span class="nt">&lt;/button&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn outline-green large mr-2 my-2"</span><span class="nt">&gt;</span>Large<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+
+<h2 id="disabled">Disabled</h2>
+
+<p>When the user is forbidden to click some button, like when they need to fill a form before being able to click “Continue”, it makes sense to show the user they can’t click there. The disabled state can be added by using the <code class="language-plaintext highlighter-rouge">disabled</code> class.</p>
+
+<p><br /></p>
+
+<div class="container flex-grow">
+    <button class="btn disabled small mr-2 my-2">Disabled</button>
+    <button class="btn disabled small mr-2 my-2">Disabled</button>
+    <button class="btn disabled squared mr-2 my-2">Disabled</button>
+    <button class="btn disabled large squared mr-2 my-2">Disabled</button>
+    <button class="btn disabled large mr-2 my-2">Disabled</button>
+</div>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container flex-grow"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn disabled small mr-2 my-2"</span><span class="nt">&gt;</span>Disabled<span class="nt">&lt;/button&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn disabled small mr-2 my-2"</span><span class="nt">&gt;</span>Disabled<span class="nt">&lt;/button&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn disabled squared mr-2 my-2"</span><span class="nt">&gt;</span>Disabled<span class="nt">&lt;/button&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn disabled large squared mr-2 my-2"</span><span class="nt">&gt;</span>Disabled<span class="nt">&lt;/button&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn disabled large mr-2 my-2"</span><span class="nt">&gt;</span>Disabled<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+
+<h2 id="customized-width">Customized width</h2>
+
+<p>Buttons placed in columns instead of next to each other need to have the same width, otherwise, they’ll look disharmonious. You may want to change the width to make the button look aligned with the text or form above it too. For spacing references, check the <a href="#spacing">spacing</a> page on this documentation.</p>
+
+<p><br /></p>
+
+<div class="container flex-grow">
+    <div class="flex-col w-64 mx-auto">
+        <button class="btn mr-2 my-2 w-full">GNOME Blue</button>
+        <button class="btn red mr-2 my-2 w-full">Red</button>
+        <button class="btn orange mr-2 my-2 w-full">Orange</button>
+        <button class="btn yellow mr-2 my-2 w-full">Yellow</button>
+        <button class="btn green my-2 w-full">Green</button>
+    </div>
+</div>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container flex-grow"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"flex-col w-64 mx-auto"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn mr-2 my-2 w-full"</span><span class="nt">&gt;</span>GNOME Blue<span class="nt">&lt;/button&gt;</span>
+        <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn red mr-2 my-2 w-full"</span><span class="nt">&gt;</span>Red<span class="nt">&lt;/button&gt;</span>
+        <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn orange mr-2 my-2 w-full"</span><span class="nt">&gt;</span>Orange<span class="nt">&lt;/button&gt;</span>
+        <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn yellow mr-2 my-2 w-full"</span><span class="nt">&gt;</span>Yellow<span class="nt">&lt;/button&gt;</span>
+        <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn green my-2 w-full"</span><span class="nt">&gt;</span>Green<span class="nt">&lt;/button&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+
+<h2 id="links">Links</h2>
+
+<p>link buttons behave like regular anchors but they have a special look - they are buttons with no background, borders, or shadows, but they respect buttons colors and have an underline hover effect. Use the <code class="language-plaintext highlighter-rouge">link</code> class combined with colors.</p>
+
+<p><br /></p>
+
+<div class="container flex-grow">
+    <button class="link mr-2 my-2">Link</button>
+    <button class="link gnome-blue mr-2 my-2">Link</button>
+    <button class="link red mr-2 my-2">Link</button>
+    <button class="link orange mr-2 my-2">Link</button>
+    <button class="link yellow mr-2 my-2">Link</button>
+    <button class="link green mr-2 my-2">Link</button>
+    <button class="link white mr-2 my-2">Link</button>
+</div>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container flex-grow"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"link mr-2 my-2"</span><span class="nt">&gt;</span>Link<span class="nt">&lt;/button&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"link gnome-blue mr-2 my-2"</span><span class="nt">&gt;</span>Link<span class="nt">&lt;/button&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"link red mr-2 my-2"</span><span class="nt">&gt;</span>Link<span class="nt">&lt;/button&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"link orange mr-2 my-2"</span><span class="nt">&gt;</span>Link<span class="nt">&lt;/button&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"link yellow mr-2 my-2"</span><span class="nt">&gt;</span>Link<span class="nt">&lt;/button&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"link green mr-2 my-2"</span><span class="nt">&gt;</span>Link<span class="nt">&lt;/button&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"link white mr-2 my-2"</span><span class="nt">&gt;</span>Link<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+:ET
