@@ -42,3 +42,12 @@ jspm_packages/
 documentation/static/gnomeui.min.css
 documentation/public
 documentation/resources
+
+
+# Jekyll files
+documentation/_site
+documentation/.sass-cache
+documentation/.jekyll-cache
+documentation/.jekyll-metadata
+documentation/vendor
+documentation/custom.scss
