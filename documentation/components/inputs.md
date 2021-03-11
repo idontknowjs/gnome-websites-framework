@@ -11,6 +11,10 @@ nav_order: 3
 
 For single line inputs.
 
+<div class="flex flex-col w-1/2">
+    <label for="first-name" >First Name</label>
+    <input type="text" id="first-name" class="mt-2" placeholder="Write your first name here">
+</div>
 ~~~html
 <div class="flex flex-col w-1/2">
     <label for="first-name" >First Name</label>
@@ -22,6 +26,10 @@ For single line inputs.
 
 For multiline inputs.
 
+<div class="flex flex-col">
+    <label for="message" >Biography</label>
+    <textarea id="message" class="mt-2"></textarea>
+</div>
 ~~~html
 <div class="flex flex-col">
     <label for="message" >Biography</label>
@@ -31,6 +39,10 @@ For multiline inputs.
 
 ## Date
 
+<div class="flex flex-col w-1/2">
+    <label for="date">Birthday</label>
+    <input type="date" class="mt-2" id="date">
+</div>
 ~~~html
 <div class="flex flex-col w-1/2">
     <label for="date">Birthday</label>
@@ -40,6 +52,10 @@ For multiline inputs.
 
 ## Email
 
+<div class="flex flex-col w-1/2">
+    <label for="email" >Email</label>
+    <input type="email" class="mt-2" id="email" placeholder="your@email.com">
+</div>
 ~~~html
 <div class="flex flex-col w-1/2">
     <label for="email" >Email</label>
@@ -49,6 +65,10 @@ For multiline inputs.
 
 ## Password
 
+<div class="flex flex-col w-1/2">
+    <label for="password" >Password</label>
+    <input type="password" class="mt-2" id="password">
+</div>
 ~~~html
 <div class="flex flex-col w-1/2">
     <label for="password" >Password</label>
@@ -60,6 +80,10 @@ For multiline inputs.
 
 When some input has invalid data or is not filled, apply the `danger` class.
 
+<div class="flex flex-col w-1/2">
+    <label for="invalid">Invalid input</label>
+    <input type="email" class="mt-2 danger" id="invalid">
+</div>
 ~~~html
 <div class="flex flex-col w-1/2">
     <label for="invalid">Invalid input</label>
@@ -71,6 +95,14 @@ When some input has invalid data or is not filled, apply the `danger` class.
 
 For predetermined options.
 
+<label for="select" class="mt-6">Select language</label>
+<div class="flex-shrink w-1/3 inline-block relative mt-2">
+    <select class="form-select cursor-pointer">
+        <option>English</option>
+        <option>French</option>
+        <option>Spanish</option>
+    </select>
+</div>
 ~~~html
 <label for="select" class="mt-6">Select language</label>
 <div class="flex-shrink w-1/3 inline-block relative mt-2">
@@ -84,6 +116,20 @@ For predetermined options.
 
 ## Checkbox
 
+<div class="flex flex-col">
+    <div class="inline-flex items-center">
+        <input type="checkbox" class="form-checkbox cursor-pointer" name="checkbox-group">
+        <span class="ml-2">Checkbox 1</span>
+    </div>
+    <div class="inline-flex items-center">
+        <input type="checkbox" class="form-checkbox cursor-pointer" name="checkbox-group">
+        <span class="ml-2">Checkbox 2</span>
+    </div>
+    <div class="inline-flex items-center">
+        <input type="checkbox" class="form-checkbox cursor-pointer" name="checkbox-group">
+        <span class="ml-2">Checkbox 3</span>
+    </div>
+</div>
 ~~~html
 <div class="flex flex-col">
     <div class="inline-flex items-center">
@@ -103,6 +149,20 @@ For predetermined options.
 
 ## Radio button
 
+<div class="flex flex-col">
+    <div class="inline-flex items-center">
+        <input type="radio" class="form-radio cursor-pointer" name="radio-group">
+        <span class="ml-2">Radio 1</span>
+    </div>
+    <div class="inline-flex items-center">
+        <input type="radio" class="form-radio cursor-pointer" name="radio-group">
+        <span class="ml-2">Radio 2</span>
+    </div>
+    <div class="inline-flex items-center">
+        <input type="radio" class="form-radio cursor-pointer" name="radio-group">
+        <span class="ml-2">Radio 3</span>
+    </div>
+</div>
 ~~~html
 <div class="flex flex-col">
     <div class="inline-flex items-center">
@@ -123,6 +183,13 @@ For predetermined options.
 ## Toggle/ switch
 Refers to enabling or disabling options.
 
+<div>
+    <div class="toggle">
+        <input type="checkbox" name="toggle" id="toggle" class="toggle-checkbox" />
+        <label for="toggle" class="toggle-label"></label>
+    </div>
+    <label for="toggle">Toggle</label>
+</div>
 ~~~html
 <div>
     <div class="toggle">
