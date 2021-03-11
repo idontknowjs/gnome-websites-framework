@@ -41,9 +41,10 @@ The project documentation is developed using Jekyll and Gitlab pages, and it use
 1. Install a full [Ruby development environment](https://jekyllrb.com/docs/installation/).
 2. Install dependencies:
 > $ bundle install
-3. Copy the **generated styles from the previous steps** into the custom styles of the documentation:
-> $ mkdir documentation/_sass/custom/ # Only needed in the first time
+3. Copy the **generated styles from the previous steps** into the custom styles of the documentation: # Only needed in the first time
+> $ mkdir documentation/_sass/custom/ 
+
 > $ cp dist/index.css "documentation/_sass/custom/custom.scss"
 4. Run the documentation server:
 > $ bundle exec jekyll build -s documentation/
-5. Navigate to http://127.0.0.1:4000/ in your browser to see it running.
+5. Navigate to http://127.0.0.1:4000/Engagement/websites/general-website-resources/ in your browser to see it running.

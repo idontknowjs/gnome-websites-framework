@@ -11,67 +11,67 @@ nav_order: 3
 
 For single line inputs.
 
-{{< example >}}
+~~~html
 <div class="flex flex-col w-1/2">
     <label for="first-name" >First Name</label>
     <input type="text" id="first-name" class="mt-2" placeholder="Write your first name here">
 </div>
-{{< /example >}}
+~~~
 
 ## Text area
 
 For multiline inputs.
 
-{{< example >}}
+~~~html
 <div class="flex flex-col">
     <label for="message" >Biography</label>
     <textarea id="message" class="mt-2"></textarea>
 </div>
-{{< /example >}}
+~~~
 
 ## Date
 
-{{< example >}}
+~~~html
 <div class="flex flex-col w-1/2">
     <label for="date">Birthday</label>
     <input type="date" class="mt-2" id="date">
 </div>
-{{< /example >}}
+~~~
 
 ## Email
 
-{{< example >}}
+~~~html
 <div class="flex flex-col w-1/2">
     <label for="email" >Email</label>
     <input type="email" class="mt-2" id="email" placeholder="your@email.com">
 </div>
-{{< /example >}}
+~~~
 
 ## Password
 
-{{< example >}}
+~~~html
 <div class="flex flex-col w-1/2">
     <label for="password" >Password</label>
     <input type="password" class="mt-2" id="password">
 </div>
-{{< /example >}}
+~~~
 
 ## Invalid inputs
 
 When some input has invalid data or is not filled, apply the `danger` class.
 
-{{< example >}}
+~~~html
 <div class="flex flex-col w-1/2">
     <label for="invalid">Invalid input</label>
     <input type="email" class="mt-2 danger" id="invalid">
 </div>
-{{< /example >}}
+~~~
 
 ## Select
 
 For predetermined options.
 
-{{< example >}}
+~~~html
 <label for="select" class="mt-6">Select language</label>
 <div class="flex-shrink w-1/3 inline-block relative mt-2">
     <select class="form-select cursor-pointer">
@@ -80,11 +80,11 @@ For predetermined options.
         <option>Spanish</option>
     </select>
 </div>
-{{< /example >}}
+~~~
 
 ## Checkbox
 
-{{< example >}}
+~~~html
 <div class="flex flex-col">
     <div class="inline-flex items-center">
         <input type="checkbox" class="form-checkbox cursor-pointer" name="checkbox-group">
@@ -99,11 +99,11 @@ For predetermined options.
         <span class="ml-2">Checkbox 3</span>
     </div>
 </div>
-{{< /example >}}
+~~~
 
 ## Radio button
 
-{{< example >}}
+~~~html
 <div class="flex flex-col">
     <div class="inline-flex items-center">
         <input type="radio" class="form-radio cursor-pointer" name="radio-group">
@@ -118,12 +118,12 @@ For predetermined options.
         <span class="ml-2">Radio 3</span>
     </div>
 </div>
-{{< /example >}}
+~~~
 
 ## Toggle/ switch
 Refers to enabling or disabling options.
 
-{{< example >}}
+~~~html
 <div>
     <div class="toggle">
         <input type="checkbox" name="toggle" id="toggle" class="toggle-checkbox" />
@@ -131,7 +131,7 @@ Refers to enabling or disabling options.
     </div>
     <label for="toggle">Toggle</label>
 </div>
-{{< /example >}}
+~~~
 
 ## Search
 
@@ -139,7 +139,7 @@ Refers to enabling or disabling options.
 
 ![Regular search](/assets/regular-search.gif)
 
-{{< example >}}
+~~~html
 <label for="search">Regular search</label>
 <div id="search" class="search mr-6 mb-8">
     <input type="search" onfocus="addBlueToSearchIcon('search-icon')"
@@ -162,13 +162,13 @@ Refers to enabling or disabling options.
         searchIcon.classList.remove("text-gnome-blue-500");
     }
 </script>
-{{< /example >}}
+~~~
 
 ### Collapsable search
 
 ![Collapsable search](/assets/collapsable-search.gif)
 
-{{< example >}}
+~~~html
 <label for="search" class="mt-8">Collapsed search</label>
 <div id="search" class="search mr-6 mb-8">
     <input type="search" id="collapsable-search" onfocus="addBlueToCollapsableSearchIcon('collapsable-search-icon')"
@@ -223,4 +223,4 @@ Refers to enabling or disabling options.
         searchIcon.classList.remove("text-gnome-blue-500");
     }
 </script>
-{{< /example >}}
+~~~

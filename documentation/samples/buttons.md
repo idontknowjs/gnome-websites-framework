@@ -7,7 +7,7 @@ permalink: /samples/buttons
 has_children: true
 ---
 
-{{< example >}}
+~~~html
 <body class="bg-gray-100">
     <div class="container my-8 mx-auto shadow-lg p-8 rounded shadow-md-md bg-white max-w-6xl">
         <h2 class="mb-4">Buttons</h2>
@@ -80,4 +80,4 @@ has_children: true
         </div>
     </div>
 </body>
-{{< /example >}}
+~~~
