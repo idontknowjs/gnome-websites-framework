@@ -51,15 +51,26 @@ This command will output the following styles
 │   ├── index.min.css
 ```
 
+<<<<<<< HEAD
 ### Building the Docs (Hugo)
+=======
+### Generating Documentation
+The project documentation is developed using Jekyll and Gitlab pages, and it uses a theme called Just-the-docs. and is available [here](https://teams.pages.gitlab.gnome.org/Engagement/websites/general-website-resources/). The project documentation is placed in the `documentation` folder.
+>>>>>>> documentation: remove hugo docs, update readme and update gitlab-ci
 
-- You will need first to build the styles from the previous steps
-- Then copy the generated styles from the previous steps into the custom styles of the documentation folder
-    ```sh
-    cp dist/index.min.css "documentation/static/gnomeui.min.css"
+- Install a full [Ruby development environment](https://jekyllrb.com/docs/installation/)
+- Install dependencies inside documentation folder:
     ```
-- Then you might either build Hugo or start the local development server with
-    ```sh
-    hugo -s documentation serve
+    cd documentation/
+    bundle install
     ```
-- If you start the Hugo server, it will serve Hugo on the following path `http://localhost:1313`
+- Then copy the **generated styles from the previous steps** into the custom styles of the documentation folder
+    ```sh
+    mkdir _sass/custom/   # Only needed in the first time
+    cp ../dist/index.min.css "_sass/custom/custom.scss"
+    ```
+- Run the documentation server:
+    ```
+    bundle exec jekyll serve
+    ```
+- Navigate to http://127.0.0.1:4000/Engagement/websites/general-website-resources/ in your browser to see it running.
