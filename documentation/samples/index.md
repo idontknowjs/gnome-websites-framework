@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Samples
-nav_order: 4
+nav_order: 3
 permalink: /samples/
 has_children: true
 ---
