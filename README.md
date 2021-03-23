@@ -6,7 +6,7 @@ For further reference concerning styling, check on [Tailwind CSS' documentation]
 
 The GNOME UI library uses [Feather Icons](https://feathericons.com/) by default.
 
-The GNOME UI Documentation is developed using [Hugo](https://gohugo.io/) and Gitlab pages, and it uses a theme called [hugo-book](https://github.com/alex-shpak/hugo-book) and is available [here](https://teams.pages.gitlab.gnome.org/Engagement/websites/gnome-websites-framework/). 
+The GNOME UI Documentation is developed using [Jekyll](https://jekyllrb.com/) and Gitlab pages, and it uses a theme called [Just The Docs](https://pmarsceill.github.io/just-the-docs/) and is available [here](https://teams.pages.gitlab.gnome.org/Engagement/websites/gnome-websites-framework/). 
 
 The project documentation is placed in the `documentation` folder.
 
@@ -18,10 +18,10 @@ The steps below will provide you guidance in how to setup the dependencies and h
 
 - Install the pre-requisites
   - [NPM](https://www.npmjs.com/get-npm)
-  - [Hugo](https://gohugo.io/getting-started/installing)
+  - [Jekyll](https://jekyllrb.com/docs/installation/)
 - Clone the repository
     ```sh
-    git clone --recurse-submodules https://gitlab.gnome.org/Teams/Engagement/websites/gnome-websites-framework.git
+    git clone https://gitlab.gnome.org/Teams/Engagement/websites/gnome-websites-framework.git
     ```
 - Then go to the directory of the repository you cloned
     ```sh
@@ -40,7 +40,7 @@ In order to generate the styles you need to run the following command.
 
 ```sh
 npm run build
-```` 
+```
 
 This command will output the following styles
 
@@ -51,20 +51,15 @@ This command will output the following styles
 │   ├── index.min.css
 ```
 
-<<<<<<< HEAD
-### Building the Docs (Hugo)
-=======
-### Generating Documentation
-The project documentation is developed using Jekyll and Gitlab pages, and it uses a theme called Just-the-docs. and is available [here](https://teams.pages.gitlab.gnome.org/Engagement/websites/general-website-resources/). The project documentation is placed in the `documentation` folder.
->>>>>>> documentation: remove hugo docs, update readme and update gitlab-ci
+### Building the Docs (Jekyll)
 
-- Install a full [Ruby development environment](https://jekyllrb.com/docs/installation/)
+- Install [Jekyll and Jekyll's requirements](https://jekyllrb.com/docs/installation/)
 - Install dependencies inside documentation folder:
     ```
     cd documentation/
     bundle install
     ```
-- Then copy the **generated styles from the previous steps** into the custom styles of the documentation folder
+- Then copy the **generated styles from [Building the Library](#building-the-library-(css/tailwind)) section** into the custom styles of the documentation folder
     ```sh
     mkdir _sass/custom/   # Only needed in the first time
     cp ../dist/index.min.css "_sass/custom/custom.scss"
@@ -73,4 +68,4 @@ The project documentation is developed using Jekyll and Gitlab pages, and it use
     ```
     bundle exec jekyll serve
     ```
-- Navigate to http://127.0.0.1:4000/Engagement/websites/general-website-resources/ in your browser to see it running.
+- Navigate to http://127.0.0.1:4000/Engagement/websites/gnome-websites-framework/ in your browser to see it running.

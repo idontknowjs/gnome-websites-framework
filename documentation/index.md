@@ -1,33 +1,56 @@
 ---
 layout: home
+title: Home
 description: "The GNOME UI is a web library built using [Tailwind CSS](https://tailwindcss.com/) to be used on GNOME's websites. It eases the styling process of the websites and enables better consistency between them, while maintaining a GNOMEish look."
 permalink: /
+nav_order: 1
 ---
-# GNOME UI
-The GNOME UI is a web library built using [Tailwind CSS](https://tailwindcss.com/) to be used on GNOME's websites. It eases the styling process of the websites and enables better consistency between them while keeping a beautiful and GNOMEish look.
+# GNOME Websites Framework
 
-<br>
+The GNOME Websites Framework is a CSS library built using [Tailwind CSS](https://tailwindcss.com/) to be used to craft and style Websites following GNOME's own visual identity. It eases the styling process of the websites and enables better consistency between them while keeping a beautiful and GNOMEish look.
 
 For further reference concerning styling, check on [Tailwind CSS' documentation](https://tailwindcss.com/).
 
-<br>
-
 The GNOME UI library uses [Feather Icons](https://feathericons.com/) by default.
 
-## Get started
-### Set up locally
+The GNOME UI Documentation is developed using [Jekyll](https://jekyllrb.com/) and Gitlab pages, and it uses a theme called [Just The Docs](https://pmarsceill.github.io/just-the-docs/) and is available [here](https://teams.pages.gitlab.gnome.org/Engagement/websites/gnome-websites-framework/). 
 
-1. [Install npm](https://www.npmjs.com/get-npm).
-2. Clone the repository:
-> `$ git clone git@gitlab.gnome.org:Teams/Engagement/websites/gnome-websites-framework.git`
-3. Navigate to the repository folder:
-> `$ cd gnome-websites-framework`
-4. Install dependencies:
-> $ npm install
-5. Generate a build:
-> $ npm run build
+The project documentation is placed in the `documentation` folder.
 
-It will then generate the following files using the created styles:
+## Getting started
+
+The steps below will provide you guidance in how to setup the dependencies and how to build the components of this repository.
+
+### Setting up Dependencies
+
+- Install the pre-requisites
+  - [NPM](https://www.npmjs.com/get-npm)
+  - [Jekyll](https://jekyllrb.com/docs/installation/)
+- Clone the repository
+    ```sh
+    git clone https://gitlab.gnome.org/Teams/Engagement/websites/gnome-websites-framework.git
+    ```
+- Then go to the directory of the repository you cloned
+    ```sh
+    cd gnome-websites-framework
+    ```
+- Install the dependencies
+    ```sh
+    npm ci
+    ```
+
+### Building the Library (CSS/Tailwind)
+
+This Library uses [Tailwind](https://tailwindcss.com/) as a base framework and this repositoriy extends Tailwind's functionalities. In order to generate the styles that can be used for production (other websites) you need to build the styles.
+
+In order to generate the styles you need to run the following command.
+
+```sh
+npm run build
+```
+
+This command will output the following styles
+
 ```
 ├── dist/
 │   ├── index.css
@@ -35,16 +58,21 @@ It will then generate the following files using the created styles:
 │   ├── index.min.css
 ```
 
-### Documentation
-The project documentation is developed using Jekyll and Gitlab pages, and it uses a theme called Just-the-docs. and is available [here](https://teams.pages.gitlab.gnome.org/Engagement/websites/gnome-websites-framework/). The project documentation is placed in the `documentation` folder.
+### Building the Docs (Jekyll)
 
-1. Install a full [Ruby development environment](https://jekyllrb.com/docs/installation/).
-2. Install dependencies:
-> $ bundle install
-3. Copy the **generated styles from the previous steps** into the custom styles of the documentation: # Only needed in the first time
-> $ mkdir documentation/_sass/custom/ 
-
-> $ cp dist/index.css "documentation/_sass/custom/custom.scss"
-4. Run the documentation server:
-> $ bundle exec jekyll build -s documentation/
-5. Navigate to http://127.0.0.1:4000/Engagement/websites/gnome-websites-framework/ in your browser to see it running.
+- Install [Jekyll and Jekyll's requirements](https://jekyllrb.com/docs/installation/)
+- Install dependencies inside documentation folder:
+    ```
+    cd documentation/
+    bundle install
+    ```
+- Then copy the **generated styles from [Building the Library](#building-the-library-(css/tailwind)) section** into the custom styles of the documentation folder
+    ```sh
+    mkdir _sass/custom/   # Only needed in the first time
+    cp ../dist/index.min.css "_sass/custom/custom.scss"
+    ```
+- Run the documentation server:
+    ```
+    bundle exec jekyll serve
+    ```
+- Navigate to http://127.0.0.1:4000/Engagement/websites/gnome-websites-framework/ in your browser to see it running.
