@@ -2,13 +2,18 @@ module.exports = {
   purge: [],
   theme: {
     extend: {
+      boxShadow: {
+        'outline-3': '0 0 0 3px rgba(66, 153, 225, 0.5)',
+        'outline-5': '0 0 0 5px rgba(66, 153, 225, 0.2)',
+        'outline-invalid-3': '0 0 0 3px rgba(255, 92, 93, 0.5)',
+      },
       colors: {
         'gnome-blue': {
           100: '#EEF5FC',
           200: '#C3DDF4',
           300: '#98C5EB',
           400: '#6DADE3',
-          500: '#4295DB',
+          500: '#3993ed',
           600: '#267CC5',
           700: '#1D619A',
           800: '#15466F',
@@ -115,6 +120,7 @@ module.exports = {
   },
   variants: {
     backgroundColor: ['responsive', 'hover', 'focus', 'checked'],
+    boxShadow: ['responsive', 'hover', 'focus', 'active', 'group-hover'],
   },
   plugins: [require("@tailwindcss/custom-forms")]
 }
