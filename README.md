@@ -1,6 +1,6 @@
-# General Website Resources (GNOME UI)
+# GNOME Websites Framework
 
-The GNOME UI is a web library built using [Tailwind CSS](https://tailwindcss.com/) to be used on GNOME's websites. It eases the styling process of the websites and enables better consistency between them while keeping a beautiful and GNOMEish look.
+The GNOME Websites Framework is a CSS library built using [Tailwind CSS](https://tailwindcss.com/) to be used to craft and style Websites following GNOME's own visual identity. It eases the styling process of the websites and enables better consistency between them while keeping a beautiful and GNOMEish look.
 
 For further reference concerning styling, check on [Tailwind CSS' documentation](https://tailwindcss.com/).
 
@@ -12,7 +12,9 @@ The project documentation is placed in the `documentation` folder.
 
 ## Getting started
 
-### Set up locally
+The steps below will provide you guidance in how to setup the dependencies and how to build the components of this repository.
+
+### Setting up Dependencies
 
 - Install the pre-requisites
   - [NPM](https://www.npmjs.com/get-npm)
@@ -30,7 +32,7 @@ The project documentation is placed in the `documentation` folder.
     npm ci
     ```
 
-### Generating (Building) the Styles
+### Building the Library (CSS/Tailwind)
 
 This Library uses [Tailwind](https://tailwindcss.com/) as a base framework and this repositoriy extends Tailwind's functionalities. In order to generate the styles that can be used for production (other websites) you need to build the styles.
 
@@ -49,7 +51,7 @@ This command will output the following styles
 │   ├── index.min.css
 ```
 
-### Generating Documentation
+### Building the Docs (Hugo)
 
 - You will need first to build the styles from the previous steps
 - Then copy the generated styles from the previous steps into the custom styles of the documentation folder
