@@ -21,9 +21,9 @@ The GNOME UI library uses [Feather Icons](https://feathericons.com/) by default.
 
 1. [Install npm](https://www.npmjs.com/get-npm).
 2. Clone the repository:
-> `$ git clone git@gitlab.gnome.org:Teams/Engagement/websites/general-website-resources.git`
+> `$ git clone git@gitlab.gnome.org:Teams/Engagement/websites/gnome-websites-framework.git`
 3. Navigate to the repository folder:
-> `$ cd general-website-resources`
+> `$ cd gnome-websites-framework`
 4. Install dependencies:
 > `$ npm install`
 5. Generate a build:
@@ -40,10 +40,10 @@ It will then generate the following files using the created styles:
 
 ### Documentation
 
-The project documentation is developed using [Hugo](https://gohugo.io/) and Gitlab pages, and it uses a theme called [hugo-book](https://github.com/alex-shpak/hugo-book) and is available [here](https://teams.pages.gitlab.gnome.org/Engagement/websites/general-website-resources/). The project documentation is placed in the `documentation` folder.
+The project documentation is developed using [Hugo](https://gohugo.io/) and Gitlab pages, and it uses a theme called [hugo-book](https://github.com/alex-shpak/hugo-book) and is available [here](https://teams.pages.gitlab.gnome.org/Engagement/websites/gnome-websites-framework/). The project documentation is placed in the `documentation` folder.
 
 1. Clone the repository with all necessary submodules
-> `$ git clone --recurse-submodules https://gitlab.gnome.org/Teams/Engagement/websites/general-website-resources` 
+> `$ git clone --recurse-submodules https://gitlab.gnome.org/Teams/Engagement/websites/gnome-websites-framework` 
 2. [Install Hugo](https://gohugo.io/getting-started/installing#linux)
 3. Copy the **generated styles from the previous steps** into the custom styles of the documentation:
 > `$ cp dist/index.min.css "documentation/static/gnomeui.min.css"`

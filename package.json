@@ -27,6 +27,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@gitlab.gnome.org:Teams/Engagement/websites/general-website-resources.git"
+    "url": "git@gitlab.gnome.org:Teams/Engagement/websites/gnome-websites-framework.git"
   }
 }

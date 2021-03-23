@@ -11,7 +11,7 @@
 * [Mockups](#mockups)
 
 # Evaluation
-## [#1 - Main Website](https://gitlab.gnome.org/Teams/Engagement/websites/general-website-resources/-/issues/1)
+## [#1 - Main Website](https://gitlab.gnome.org/Teams/Engagement/websites/gnome-websites-framework/-/issues/1)
 ### Screenshot
 
 Place the component screenshot here
@@ -36,7 +36,7 @@ Place the component screenshot here
 * Item 1
 * Item 2
 
-## [#2 - Extensions](https://gitlab.gnome.org/Teams/Engagement/websites/general-website-resources/-/issues/2)
+## [#2 - Extensions](https://gitlab.gnome.org/Teams/Engagement/websites/gnome-websites-framework/-/issues/2)
 
 ### Screenshot
 
@@ -88,7 +88,7 @@ Place the component screenshot here
 * Item 1
 * Item 2
 
-## [#4 - Planet](https://gitlab.gnome.org/Teams/Engagement/websites/general-website-resources/-/issues/4)
+## [#4 - Planet](https://gitlab.gnome.org/Teams/Engagement/websites/gnome-websites-framework/-/issues/4)
 
 ### Screenshot
 
@@ -114,7 +114,7 @@ Place the component screenshot here
 * Item 1
 * Item 2
 
-## [#5 - Discourse](https://gitlab.gnome.org/Teams/Engagement/websites/general-website-resources/-/issues/5)
+## [#5 - Discourse](https://gitlab.gnome.org/Teams/Engagement/websites/gnome-websites-framework/-/issues/5)
 
 ### Screenshot
 
@@ -140,7 +140,7 @@ Place the component screenshot here
 * Item 1
 * Item 2
 
-## [#6 - Developer Center](https://gitlab.gnome.org/Teams/Engagement/websites/general-website-resources/-/issues/6)
+## [#6 - Developer Center](https://gitlab.gnome.org/Teams/Engagement/websites/gnome-websites-framework/-/issues/6)
 
 ### Screenshot
 
@@ -166,7 +166,7 @@ Place the component screenshot here
 * Item 1
 * Item 2
 
-## [#7 - Surveys](https://gitlab.gnome.org/Teams/Engagement/websites/general-website-resources/-/issues/7)
+## [#7 - Surveys](https://gitlab.gnome.org/Teams/Engagement/websites/gnome-websites-framework/-/issues/7)
 
 ### Screenshot
 
@@ -192,7 +192,7 @@ Place the component screenshot here
 * Item 1
 * Item 2
 
-## [#8 - Wiki](https://gitlab.gnome.org/Teams/Engagement/websites/general-website-resources/-/issues/8)
+## [#8 - Wiki](https://gitlab.gnome.org/Teams/Engagement/websites/gnome-websites-framework/-/issues/8)
 
 ### Screenshot
 

@@ -6,7 +6,7 @@ For further reference concerning styling, check on [Tailwind CSS' documentation]
 
 The GNOME UI library uses [Feather Icons](https://feathericons.com/) by default.
 
-The GNOME UI Documentation is developed using [Hugo](https://gohugo.io/) and Gitlab pages, and it uses a theme called [hugo-book](https://github.com/alex-shpak/hugo-book) and is available [here](https://teams.pages.gitlab.gnome.org/Engagement/websites/general-website-resources/). 
+The GNOME UI Documentation is developed using [Hugo](https://gohugo.io/) and Gitlab pages, and it uses a theme called [hugo-book](https://github.com/alex-shpak/hugo-book) and is available [here](https://teams.pages.gitlab.gnome.org/Engagement/websites/gnome-websites-framework/). 
 
 The project documentation is placed in the `documentation` folder.
 
@@ -21,11 +21,11 @@ The steps below will provide you guidance in how to setup the dependencies and h
   - [Hugo](https://gohugo.io/getting-started/installing)
 - Clone the repository
     ```sh
-    git clone --recurse-submodules https://gitlab.gnome.org/Teams/Engagement/websites/general-website-resources.git
+    git clone --recurse-submodules https://gitlab.gnome.org/Teams/Engagement/websites/gnome-websites-framework.git
     ```
 - Then go to the directory of the repository you cloned
     ```sh
-    cd general-website-resources
+    cd gnome-websites-framework
     ```
 - Install the dependencies
     ```sh

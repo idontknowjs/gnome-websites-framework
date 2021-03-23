@@ -11,7 +11,7 @@
 * [Mockups](#mockups)
 
 # Evaluation
-## [#1 - Main Website](https://gitlab.gnome.org/Teams/Engagement/websites/general-website-resources/-/issues/1)
+## [#1 - Main Website](https://gitlab.gnome.org/Teams/Engagement/websites/gnome-websites-framework/-/issues/1)
 
 ### Screenshots
 
@@ -23,7 +23,7 @@ Place the screenshots of this element here, if needed
 * Spacing
 * Variants
 
-## [#2 - Extensions](https://gitlab.gnome.org/Teams/Engagement/websites/general-website-resources/-/issues/2)
+## [#2 - Extensions](https://gitlab.gnome.org/Teams/Engagement/websites/gnome-websites-framework/-/issues/2)
 
 ### Screenshots
 
@@ -47,7 +47,7 @@ Place the screenshots of this element here, if needed
 * Spacing
 * Variants
 
-## [#4 - Planet](https://gitlab.gnome.org/Teams/Engagement/websites/general-website-resources/-/issues/4)
+## [#4 - Planet](https://gitlab.gnome.org/Teams/Engagement/websites/gnome-websites-framework/-/issues/4)
 
 ### Screenshots
 
@@ -59,7 +59,7 @@ Place the screenshots of this element here, if needed
 * Spacing
 * Variants
 
-## [#5 - Discourse](https://gitlab.gnome.org/Teams/Engagement/websites/general-website-resources/-/issues/5)
+## [#5 - Discourse](https://gitlab.gnome.org/Teams/Engagement/websites/gnome-websites-framework/-/issues/5)
 
 ### Screenshots
 
@@ -71,7 +71,7 @@ Place the screenshots of this element here, if needed
 * Spacing
 * Variants
 
-## [#6 - Developer Center](https://gitlab.gnome.org/Teams/Engagement/websites/general-website-resources/-/issues/6)
+## [#6 - Developer Center](https://gitlab.gnome.org/Teams/Engagement/websites/gnome-websites-framework/-/issues/6)
 
 ### Screenshots
 
@@ -83,7 +83,7 @@ Place the screenshots of this element here, if needed
 * Spacing
 * Variants
 
-## [#7 - Surveys](https://gitlab.gnome.org/Teams/Engagement/websites/general-website-resources/-/issues/7)
+## [#7 - Surveys](https://gitlab.gnome.org/Teams/Engagement/websites/gnome-websites-framework/-/issues/7)
 
 ### Screenshots
 
@@ -95,7 +95,7 @@ Place the screenshots of this element here, if needed
 * Spacing
 * Variants
 
-## [#8 - Wiki](https://gitlab.gnome.org/Teams/Engagement/websites/general-website-resources/-/issues/8)
+## [#8 - Wiki](https://gitlab.gnome.org/Teams/Engagement/websites/gnome-websites-framework/-/issues/8)
 
 ### Screenshots
 
