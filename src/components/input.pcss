@@ -40,24 +40,21 @@ select {
         
         &:checked {
             @apply right-0 border-gnome-blue-500;
-            right: 0;
-            border-color: theme('colors.gnome-blue.500');
         }
 
         &:checked + .toggle-label {
             @apply bg-gnome-blue-500;
-            background-color: theme('colors.gnome-blue.500');
         }
     }
 }
 
 input[type=search] {
     @apply pl-8 border-transparent shadow-none rounded-none transition duration-200 ease-in-out;
-    border-bottom: 2px solid theme('colors.black');
+    @apply border-t-0 border-r-0 border-b-2 border-l-0 border-gray-900;
 
     &:focus {
         @apply outline-none shadow-outline-3 border-gnome-blue-500 .border-opacity-50 .rounded;
-        border-bottom: 2px solid theme('colors.gnome-blue.500') .rounded;
+        @apply border-b-2 border-gnome-blue-500 .rounded;
     }
 }
 
