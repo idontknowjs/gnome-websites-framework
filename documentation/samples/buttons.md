@@ -4,7 +4,6 @@ title: Buttons
 parent: Samples
 nav_order: 1
 permalink: /samples/buttons
-has_children: true
 ---
 
 <body class="bg-gray-100">

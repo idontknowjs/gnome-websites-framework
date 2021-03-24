@@ -3,7 +3,6 @@ layout: default
 title: Samples
 permalink: /samples/
 nav_order: 4
-has_children: true
 ---
 
 <body class="bg-gray-100">

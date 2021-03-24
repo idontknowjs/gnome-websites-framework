@@ -4,7 +4,6 @@ title: Inputs
 nav_order: 3
 parent: Samples
 permalink: /samples/inputs
-has_children: true
 ---
 
 <div class="bg-gray-100">

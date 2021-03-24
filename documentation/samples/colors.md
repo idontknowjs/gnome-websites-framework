@@ -4,7 +4,6 @@ title: Colors
 parent: Samples
 nav_order: 2
 permalink: /samples/colors
-has_children: true
 ---
 
 <body class="bg-gray-100">

@@ -3,6 +3,7 @@ layout: default
 title: Inputs
 parent: Components
 nav_order: 3
+permalink: /components/inputs
 ---
 
 # Inputs

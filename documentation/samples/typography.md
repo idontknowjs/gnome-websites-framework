@@ -4,7 +4,6 @@ title: Typography
 nav_order: 4
 parent: Samples
 permalink: /samples/typography
-has_children: true
 ---
 
 <body class="bg-gray-100">

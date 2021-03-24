@@ -2,7 +2,7 @@ image: node:15-slim
 
 stages:
   - build:ui
-  - deploy:docs
+  - build:docs
 
 build:ui:
   stage: build:ui
@@ -16,7 +16,7 @@ build:ui:
 
 pages:
   image: ruby:2.7
-  stage: deploy:docs
+  stage: build:docs
   script:
     - mkdir public documentation/_sass/custom
     - cd documentation && gem install bundler

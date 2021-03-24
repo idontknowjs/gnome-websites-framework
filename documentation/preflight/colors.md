@@ -3,6 +3,7 @@ layout: default
 title: Colors
 parent: Preflight
 nav_order: 1
+permalink: /preflight/colors
 ---
 
 # Colors
