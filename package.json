@@ -1,8 +1,7 @@
 {
   "name": "@gnome/ui",
-  "version": "1.0.0",
-  "description": "GNOME's own UI library.",
-  "main": "index.js",
+  "version": "0.0.1",
+  "description": "GNOME's Foundation CSS Framework for crafting Websites",
   "scripts": {
     "build": "gulp build"
   },
