@@ -1,3 +1,10 @@
+---
+layout: home
+title: Home
+description: "The GNOME UI is a web library built using [Tailwind CSS](https://tailwindcss.com/) to be used on GNOME's websites. It eases the styling process of the websites and enables better consistency between them, while maintaining a GNOMEish look."
+permalink: /
+nav_order: 1
+---
 # GNOME Websites Framework
 
 The GNOME Websites Framework is a CSS library built using [Tailwind CSS](https://tailwindcss.com/) to be used to craft and style Websites following GNOME's own visual identity. It eases the styling process of the websites and enables better consistency between them while keeping a beautiful and GNOMEish look.

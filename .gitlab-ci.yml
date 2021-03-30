@@ -3,7 +3,6 @@ image: node:15-slim
 stages:
   - build:ui
   - build:docs
-  - deploy:docs
 
 build:ui:
   stage: build:ui
@@ -15,26 +14,17 @@ build:ui:
       - dist
       - assets
 
-build:hugo:
-  image: registry.gitlab.com/pages/hugo/hugo_extended
+pages:
+  image: ruby:2.7
   stage: build:docs
   script:
-    - cp dist/index.min.css "documentation/static/gnomeui.min.css"
-    - hugo -s documentation --minify
-  variables:
-    GIT_SUBMODULE_STRATEGY: recursive
-  dependencies:
-    - build:ui
-  artifacts:
-    paths:
-      - documentation/public
-
-pages:
-  stage: deploy:docs
-  script:
-    - mv documentation/public public/
+    - mkdir public documentation/_sass/custom
+    - cd documentation && gem install bundler
+    - bundle install
+    - cp ../dist/index.css "_sass/custom/custom.scss"
+    - bundle exec jekyll build -d ../public
   artifacts:
     paths:
       - public
   only:
-    - master
+    - main

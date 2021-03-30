@@ -36,9 +36,12 @@ jspm_packages/
 .npm
 
 # Environment files
-.env
+.Environment
 
-# Hugo files
-documentation/static/gnomeui.min.css
-documentation/public
-documentation/resources
+# Jekyll files
+documentation/_site
+documentation/_sass/custom
+documentation/.sass-cache
+documentation/.jekyll-cache
+documentation/.jekyll-metadata
+documentation/vendor
