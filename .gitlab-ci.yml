@@ -1,5 +1,11 @@
 image: node:15-slim
 
+variables:
+  BUNDLE_DEPLOYMENT: true
+  BUNDLE_FROZEN: true
+  BUNDLE_CACHE_PATH: documentation/.bundler-cache
+  BUNDLE_PATH: documentation/.bundler-cache
+
 cache: &cacheSettings
   key:
     files:
@@ -16,7 +22,7 @@ cache: &cacheSettings
 
 .rubyInstallScript: &rubyInstallScript
   - gem install bundler
-  - bundle install -j $(nproc) --gemfile documentation/Gemfile --path documentation/.bundler-cache --deployment --frozen
+  - bundle install -j $(nproc) --gemfile documentation/Gemfile
 
 stages:
   - install
