@@ -1,5 +1,3 @@
-image: node:15-slim
-
 variables:
   BUNDLE_DEPLOYMENT: "true"
   BUNDLE_FROZEN: "true"
@@ -33,6 +31,7 @@ stages:
 install:node:
   stage: install
   needs: [ ]
+  image: node:15-slim
   script:
     - *npmInstallScript
   cache:
@@ -53,6 +52,7 @@ build:library:
   stage: build:library
   needs:
     - job: install:node
+  image: node:15-slim
   script:
     - *npmInstallScript
     - npm run build
@@ -68,6 +68,7 @@ build:docs:
     - job: install:jekyll
     - job: build:library
       artifacts: true
+  image: ruby:2.7
   script:
     - *rubyInstallScript
     - cd documentation
