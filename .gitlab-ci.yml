@@ -19,7 +19,6 @@ cache: &cacheSettings
   - npm ci --no-shrinkwrap --cache .npm --prefer-offline
 
 .rubyInstallScript: &rubyInstallScript
-  - gem install bundler
   - bundle install -j $(nproc) --gemfile documentation/Gemfile
 
 stages:
