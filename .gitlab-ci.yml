@@ -84,6 +84,7 @@ pages:
   needs:
     - job: build:docs
       artifacts: true
+  image: ruby:2.7
   script:
     - *rubyInstallScript
     - rm -rf public
