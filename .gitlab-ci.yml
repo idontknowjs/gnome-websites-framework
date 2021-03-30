@@ -1,30 +1,89 @@
 image: node:15-slim
 
-stages:
-  - build:ui
-  - build:docs
+cache: &cacheSettings
+  key:
+    files:
+      - documentation/Gemfile.lock
+      - package-lock.json
+  when: on_success
+  policy: pull
+  paths:
+    - documentation/.bundler-cache/
+    - .npm
 
-build:ui:
-  stage: build:ui
+.npmInstallScript: &npmInstallScript
+  - npm ci --no-shrinkwrap --cache .npm --prefer-offline
+
+.rubyInstallScript: &rubyInstallScript
+  - gem install bundler
+  - bundle install -j $(nproc) --gemfile documentation/Gemfile --path documentation/.bundler-cache --deployment --frozen
+
+stages:
+  - install
+  - build
+  - deploy
+
+install:node:
+  stage: install
+  needs: [ ]
   script:
-    - npm ci
+    - *npmInstallScript
+  cache:
+    <<: *cacheSettings
+    policy: pull-push
+
+install:ruby:
+  stage: install
+  needs: [ ]
+  image: ruby:2.7
+  script:
+    - *rubyInstallScript
+  cache:
+    <<: *cacheSettings
+    policy: pull-push
+
+build:library:
+  stage: build
+  needs:
+    - job: install:node
+  script:
+    - *npmInstallScript
     - npm run build
   artifacts:
     paths:
       - dist
       - assets
+    expire_in: 1 day
+
+build:jekyll:
+  stage: build
+  needs:
+    - job: install:ruby
+    - job: build:library
+      artifacts: true
+  script:
+    - *rubyInstallScript
+    - cd documentation
+    - mkdir _sass/custom
+    - cp ../dist/index.css "_sass/custom/custom.scss"
+    - bundle exec jekyll build -d build
+  artifacts:
+    paths:
+      - documentation/build
+    expire_in: 1 day
 
 pages:
-  image: ruby:2.7
-  stage: build:docs
+  stage: deploy
+  needs:
+    - job: build:jekyll
+      artifacts: true
   script:
-    - mkdir public documentation/_sass/custom
-    - cd documentation && gem install bundler
-    - bundle install
-    - cp ../dist/index.css "_sass/custom/custom.scss"
-    - bundle exec jekyll build -d ../public
+    - *rubyInstallScript
+    - rm -rf public
+    - mv documentation/build public
   artifacts:
     paths:
       - public
+    expire_in: 1 day
   only:
     - main
