@@ -85,9 +85,8 @@ pages:
   needs:
     - job: build:docs
       artifacts: true
-  image: ruby:2.7-slim
+  image: node:15-slim
   script:
-    - *rubyInstallScript
     - rm -rf public
     - mv documentation/build public
   artifacts:
