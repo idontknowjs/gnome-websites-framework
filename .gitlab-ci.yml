@@ -20,7 +20,8 @@ cache: &cacheSettings
 
 stages:
   - install
-  - build
+  - build:library
+  - build:docs
   - deploy
 
 install:node:
@@ -32,7 +33,7 @@ install:node:
     <<: *cacheSettings
     policy: pull-push
 
-install:ruby:
+install:jekyll:
   stage: install
   needs: [ ]
   image: ruby:2.7
@@ -43,7 +44,7 @@ install:ruby:
     policy: pull-push
 
 build:library:
-  stage: build
+  stage: build:library
   needs:
     - job: install:node
   script:
@@ -55,10 +56,10 @@ build:library:
       - assets
     expire_in: 1 day
 
-build:jekyll:
-  stage: build
+build:docs:
+  stage: build:docs
   needs:
-    - job: install:ruby
+    - job: install:jekyll
     - job: build:library
       artifacts: true
   script:
@@ -75,7 +76,7 @@ build:jekyll:
 pages:
   stage: deploy
   needs:
-    - job: build:jekyll
+    - job: build:docs
       artifacts: true
   script:
     - *rubyInstallScript
