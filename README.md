@@ -69,3 +69,11 @@ This command will output the following styles
     bundle exec jekyll serve
     ```
 - Navigate to http://127.0.0.1:4000/Engagement/websites/gnome-websites-framework/ in your browser to see it running.
+
+## Contributing
+To contribute, open merge requests at https://gitlab.gnome.org/Teams/Engagement/websites/general-website-resources.
+
+Commit messages should follow the [GNOME commit message
+guidelines](https://wiki.gnome.org/Git/CommitMessages).
+
+Join our conversations on [Matrix or IRC](https://wiki.gnome.org/Community/GettingInTouch/IRC)! You can find us at the #engagement:gnome.org channel.
