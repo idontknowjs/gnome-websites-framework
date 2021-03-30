@@ -1,30 +1,98 @@
-image: node:15-slim
+variables:
+  BUNDLE_DEPLOYMENT: "true"
+  BUNDLE_FROZEN: "true"
+  BUNDLE_CACHE_PATH: ".bundler-cache"
+  BUNDLE_PATH: ".bundler-cache"
+
+cache: &cacheSettings
+  key:
+    files:
+      - documentation/Gemfile.lock
+      - package-lock.json
+  when: on_success
+  policy: pull
+  paths:
+    - documentation/.bundler-cache/
+    - .npm
+
+.npmInstallScript: &npmInstallScript
+  - npm ci --no-shrinkwrap --cache .npm --prefer-offline
+
+.rubyInstallScript: &rubyInstallScript
+  - gem install bundler:2.2.11
+  - bundle install -j $(nproc) --gemfile documentation/Gemfile
 
 stages:
-  - build:ui
+  - install
+  - build:library
   - build:docs
+  - deploy
 
-build:ui:
-  stage: build:ui
+install:node:
+  stage: install
+  needs: [ ]
+  image: node:15-slim
   script:
-    - npm ci
+    - *npmInstallScript
+  cache:
+    <<: *cacheSettings
+    policy: pull-push
+
+install:jekyll:
+  stage: install
+  needs: [ ]
+  image: ruby:2.7-slim
+  script:
+    - *rubyInstallScript
+  cache:
+    <<: *cacheSettings
+    policy: pull-push
+
+build:library:
+  stage: build:library
+  needs:
+    - job: install:node
+  image: node:15-slim
+  script:
+    - *npmInstallScript
     - npm run build
   artifacts:
     paths:
       - dist
       - assets
+    expire_in: 1 day
+
+build:docs:
+  stage: build:docs
+  needs:
+    - job: install:jekyll
+    - job: build:library
+      artifacts: true
+  image: ruby:2.7-slim
+  script:
+    - *rubyInstallScript
+    - cd documentation
+    - mkdir _sass/custom
+    - cp ../dist/index.css "_sass/custom/custom.scss"
+    - bundle exec jekyll build -d build
+  artifacts:
+    paths:
+      - documentation/build
+    expire_in: 1 day
 
 pages:
-  image: ruby:2.7
-  stage: build:docs
+  stage: deploy
+  needs:
+    - job: build:docs
+      artifacts: true
+  image: ruby:2.7-slim
   script:
-    - mkdir public documentation/_sass/custom
-    - cd documentation && gem install bundler
-    - bundle install
-    - cp ../dist/index.css "_sass/custom/custom.scss"
-    - bundle exec jekyll build -d ../public
+    - *rubyInstallScript
+    - rm -rf public
+    - mv documentation/build public
   artifacts:
     paths:
       - public
+    expire_in: 1 day
   only:
     - main
