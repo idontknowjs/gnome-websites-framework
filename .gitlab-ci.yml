@@ -1,8 +1,3 @@
-variables:
-  BUNDLE_FROZEN: "true"
-  BUNDLE_CACHE_PATH: "documentation/.bundler-cache"
-  BUNDLE_PATH: "documentation/.bundler-cache"
-
 cache: &cacheSettings
   key:
     files:
@@ -19,6 +14,11 @@ cache: &cacheSettings
 
 .rubyInstallScript: &rubyInstallScript
   - gem install bundler
+  - bundle config --global frozen true
+  - bundle config --global cache_path documentation/.bundler-cache
+  - bundle config --global path documentation/.bundler-cache
+  - bundle config --global cache_all true
+  - bundle config --global clean false
   - bundle install -j $(nproc) --gemfile documentation/Gemfile
 
 stages:
