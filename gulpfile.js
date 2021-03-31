@@ -1,16 +1,20 @@
 const gulp = require('gulp');
 const compile = require('gulp-postcss');
-const maps = require('gulp-sourcemaps');
-const rename = require('gulp-rename');
+const sourcemaps = require('gulp-sourcemaps');
 const clean = require('gulp-clean-css');
+const rename = require('gulp-rename');
+const filter = require('gulp-filter');
 
 gulp.task('build', () =>
-    gulp.src('src/index.css').
-        pipe(maps.init()).
-          pipe(compile()).
-        pipe(maps.write('.')).
-        pipe(gulp.dest('dist')).
-        pipe(clean()).
-        pipe(rename('index.min.css')).
-        pipe(gulp.dest('dist')),
+    gulp.src('src/index.css')
+      .pipe(sourcemaps.init())
+        .pipe(compile())
+      .pipe(sourcemaps.write('.'))
+      .pipe(gulp.dest('dist'))
+      
+      .pipe(filter('**/*.css'))
+      .pipe(clean())
+      .pipe(rename({suffix:'.min'}))
+      .pipe(sourcemaps.write('.'))
+      .pipe(gulp.dest("dist")),
 );
