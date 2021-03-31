@@ -31,7 +31,7 @@ stages:
 install:node:
   stage: install
   needs: [ ]
-  image: node:15-slim
+  image: node:15-alpine
   script:
     - *npmInstallScript
   cache:
@@ -41,7 +41,7 @@ install:node:
 install:jekyll:
   stage: install
   needs: [ ]
-  image: ruby:2.7-slim
+  image: ruby:2.7-alpine
   script:
     - *rubyInstallScript
   cache:
@@ -52,7 +52,7 @@ build:library:
   stage: build:library
   needs:
     - job: install:node
-  image: node:15-slim
+  image: node:15-alpine
   script:
     - *npmInstallScript
     - npm run build
@@ -68,7 +68,7 @@ build:docs:
     - job: install:jekyll
     - job: build:library
       artifacts: true
-  image: ruby:2.7-slim
+  image: ruby:2.7-alpine
   script:
     - *rubyInstallScript
     - cd documentation
@@ -85,7 +85,7 @@ pages:
   needs:
     - job: build:docs
       artifacts: true
-  image: node:15-slim
+  image: alpine
   script:
     - rm -rf public
     - mv documentation/build public
