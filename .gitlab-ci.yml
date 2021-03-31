@@ -37,8 +37,6 @@ install:node:
   cache:
     <<: *cacheSettings
     policy: pull-push
-    paths:
-      - .npm
   rules:
     - changes:
       - package-lock.json
@@ -55,9 +53,7 @@ install:jekyll:
     - *rubyInstallScript
   cache:
     <<: *cacheSettings
-    policy: pull-push´
-    paths:
-      - documentation/.bundler-cache
+    policy: pull-push
   rules:
     - changes:
       - documentation/Gemfile.lock
@@ -69,8 +65,9 @@ install:jekyll:
 build:library:
   stage: build:library
   image: node:15-alpine
-  script:
+  before_script:
     - *npmInstallScript
+  script:
     - npm run build
   artifacts:
     paths:
@@ -86,6 +83,8 @@ build:docs:
     - job: build:library
       artifacts: true
   image: ruby:2.7-slim
+  before_script:
+    - *rubyInstallScript
   script:
     - cd documentation
     - mkdir _sass/custom
@@ -111,5 +110,5 @@ pages:
     paths:
       - public
     expire_in: 1 day
-  only:
-    - main
+  rules:
+    - if: '$CI_COMMIT_BRANCH == "main"'
