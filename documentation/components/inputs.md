@@ -205,7 +205,7 @@ Refers to enabling or disabling options.
 
 ### Regular search
 
-![Regular search](/assets/regular-search.gif)
+![Regular search](../assets/regular-search.gif)
 
 ~~~html
 <label for="search">Regular search</label>
@@ -234,7 +234,7 @@ Refers to enabling or disabling options.
 
 ### Collapsable search
 
-![Collapsable search](/assets/collapsable-search.gif)
+![Collapsable search](../assets/collapsable-search.gif)
 
 ~~~html
 <label for="search" class="mt-8">Collapsed search</label>
