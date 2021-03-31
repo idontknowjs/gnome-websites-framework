@@ -39,10 +39,11 @@ install:node:
     policy: pull-push
   rules:
     - changes:
-        - package-lock.json
-    - exists:
-        - .npm
+      - package-lock.json
+    - exists: 
+      - .npm
       when: never
+    - when: always
 
 install:jekyll:
   stage: install
@@ -55,10 +56,11 @@ install:jekyll:
     policy: pull-push
   rules:
     - changes:
-        - documentation/Gemfile.lock
-    - exists:
-        - documentation/.bundler-cache
+      - documentation/Gemfile.lock
+    - exists: 
+      - documentation/.bundler-cache
       when: never
+    - when: always
 
 build:library:
   stage: build:library
