@@ -37,6 +37,8 @@ install:node:
   cache:
     <<: *cacheSettings
     policy: pull-push
+    paths:
+      - .npm
   rules:
     - changes:
       - package-lock.json
@@ -53,7 +55,9 @@ install:jekyll:
     - *rubyInstallScript
   cache:
     <<: *cacheSettings
-    policy: pull-push
+    policy: pull-push´
+    paths:
+      - documentation/.bundler-cache
   rules:
     - changes:
       - documentation/Gemfile.lock
