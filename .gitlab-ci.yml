@@ -40,10 +40,9 @@ install:node:
   rules:
     - changes:
       - package-lock.json
-    - exists: 
-      - .npm
-      when: never
-    - when: always
+      when: always
+    - if: '$CI_PIPELINE_SOURCE == "merge_request_event"'
+      when: manual
 
 install:jekyll:
   stage: install
@@ -57,10 +56,9 @@ install:jekyll:
   rules:
     - changes:
       - documentation/Gemfile.lock
-    - exists: 
-      - documentation/.bundler-cache
-      when: never
-    - when: always
+      when: always
+    - if: '$CI_PIPELINE_SOURCE == "merge_request_event"'
+      when: manual
 
 build:library:
   stage: build:library
@@ -75,7 +73,6 @@ build:library:
       - assets
     expire_in: 1 day
   rules:
-    - when: always
 
 build:docs:
   stage: build:docs
@@ -95,7 +92,6 @@ build:docs:
       - documentation/build
     expire_in: 1 day
   rules:
-    - when: always
 
 pages:
   stage: deploy
