@@ -31,7 +31,7 @@ stages:
 install:node:
   stage: install
   needs: [ ]
-  image: node:15-alpine
+  image: node:15
   script:
     - *npmInstallScript
   cache:
@@ -41,7 +41,7 @@ install:node:
 install:jekyll:
   stage: install
   needs: [ ]
-  image: ruby:2.7-alpine
+  image: ruby:2.7
   script:
     - *rubyInstallScript
   cache:
