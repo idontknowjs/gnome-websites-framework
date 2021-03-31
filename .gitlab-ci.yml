@@ -12,7 +12,7 @@ cache: &cacheSettings
   when: on_success
   policy: pull
   paths:
-    - documentation/.bundler-cache/
+    - documentation/.bundler-cache
     - .npm
 
 .npmInstallScript: &npmInstallScript
@@ -37,6 +37,12 @@ install:node:
   cache:
     <<: *cacheSettings
     policy: pull-push
+  rules:
+    - changes:
+        - package-lock.json
+    - exists:
+        - .npm
+      when: never
 
 install:jekyll:
   stage: install
@@ -47,6 +53,12 @@ install:jekyll:
   cache:
     <<: *cacheSettings
     policy: pull-push
+  rules:
+    - changes:
+        - documentation/Gemfile.lock
+    - exists:
+        - documentation/.bundler-cache
+      when: never
 
 build:library:
   stage: build:library
