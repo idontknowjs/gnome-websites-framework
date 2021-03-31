@@ -73,6 +73,8 @@ build:library:
       - dist
       - assets
     expire_in: 1 day
+  rules:
+    - when: always
 
 build:docs:
   stage: build:docs
@@ -89,6 +91,8 @@ build:docs:
     paths:
       - documentation/build
     expire_in: 1 day
+  rules:
+    - when: always
 
 pages:
   stage: deploy
@@ -105,3 +109,5 @@ pages:
     expire_in: 1 day
   only:
     - main
+  rules:
+    - when: always
