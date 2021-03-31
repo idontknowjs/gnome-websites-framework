@@ -70,7 +70,6 @@ build:docs:
       artifacts: true
   image: ruby:2.7-alpine
   script:
-    - *rubyInstallScript
     - cd documentation
     - mkdir _sass/custom
     - cp ../dist/index.css "_sass/custom/custom.scss"
