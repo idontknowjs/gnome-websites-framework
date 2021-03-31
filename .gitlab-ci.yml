@@ -62,8 +62,6 @@ install:jekyll:
 
 build:library:
   stage: build:library
-  needs:
-    - job: install:node
   image: node:15-alpine
   script:
     - *npmInstallScript
@@ -77,7 +75,6 @@ build:library:
 build:docs:
   stage: build:docs
   needs:
-    - job: install:jekyll
     - job: build:library
       artifacts: true
   image: ruby:2.7-alpine
