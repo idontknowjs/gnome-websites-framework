@@ -109,5 +109,3 @@ pages:
     expire_in: 1 day
   only:
     - main
-  rules:
-    - when: always
