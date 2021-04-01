@@ -4,6 +4,7 @@ terminal:
     - apt update
     - curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
     - apt install nodejs
+    - gem install bundler:2.2.11
   script: sleep 60
   variables:
     NODE_ENV: "development"
