@@ -88,4 +88,4 @@ To contribute, open merge requests at https://gitlab.gnome.org/Teams/Engagement/
 Commit messages should follow the [GNOME commit message
 guidelines](https://wiki.gnome.org/Git/CommitMessages).
 
-Join our conversations on [Matrix or IRC](https://wiki.gnome.org/Community/GettingInTouch/IRC)! You can find us at the #engagement:gnome.org channel.
+Join our conversations on [Matrix or IRC](https://wiki.gnome.org/Community/GettingInTouch/IRC). You can find us at the #engagement:gnome.org channel.
