@@ -18,7 +18,7 @@ The steps below will provide you guidance in how to setup the dependencies and h
 
 - Install the pre-requisites
   - [NPM](https://www.npmjs.com/get-npm)
-  - [Jekyll](https://jekyllrb.com/docs/installation/)
+  - [Ruby](https://www.ruby-lang.org/en/downloads/)
 - Clone the repository
     ```sh
     git clone https://gitlab.gnome.org/Teams/Engagement/websites/gnome-websites-framework.git
@@ -27,9 +27,13 @@ The steps below will provide you guidance in how to setup the dependencies and h
     ```sh
     cd gnome-websites-framework
     ```
-- Install the dependencies
+- Install the Node.js (Library) dependencies
     ```sh
     npm ci
+    ```
+- Install the Documentation (Jekyll) dependencies
+    ```sh
+    gem install bundler:2.2.11
     ```
 
 ### Building the Library (CSS/Tailwind)
@@ -49,20 +53,27 @@ This command will output the following styles
 │   ├── index.css
 │   ├── index.css.map
 │   ├── index.min.css
+│   ├── index.min.css.map
 ```
+
+### Copying the Built Library to the Docs folder
+
+- Before building the Documentation you need to copy the Library CSS file
+- For the first time you need to create the following directory:
+    ```sh
+    mkdir documentation/_sass/custom/
+    ```
+- Every time you change the Library and rebuild it you need to copy the CSS file
+    ```sh
+    cp dist/index.min.css documentation/_sass/custom/custom.scss
+    ```
 
 ### Building the Docs (Jekyll)
 
-- Install [Jekyll and Jekyll's requirements](https://jekyllrb.com/docs/installation/)
-- Install dependencies inside documentation folder:
+- Install the Bundler dependencies (first-time)
     ```
     cd documentation/
     bundle install
-    ```
-- Then copy the **generated styles from [Building the Library](#building-the-library-(css/tailwind)) section** into the custom styles of the documentation folder
-    ```sh
-    mkdir _sass/custom/   # Only needed in the first time
-    cp ../dist/index.min.css "_sass/custom/custom.scss"
     ```
 - Run the documentation server:
     ```
@@ -71,6 +82,7 @@ This command will output the following styles
 - Navigate to http://127.0.0.1:4000/Engagement/websites/gnome-websites-framework/ in your browser to see it running.
 
 ## Contributing
+
 To contribute, open merge requests at https://gitlab.gnome.org/Teams/Engagement/websites/general-website-resources.
 
 Commit messages should follow the [GNOME commit message
