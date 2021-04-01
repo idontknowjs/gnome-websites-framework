@@ -73,21 +73,12 @@ build:library:
       - assets
     expire_in: 1 day
   rules:
-    - changes:
-      - src/
-      - package-lock.json
-      - package.json
-      - tailwind.config.js
-      - postcss.config.js
-      - gulpfile.js
-      when: always
 
 build:docs:
   stage: build:docs
-  needs:
-    - job: build:library
-      artifacts: true
   image: ruby:2.7-slim
+  dependencies:
+    - build:library
   before_script:
     - *rubyInstallScript
   script:
@@ -100,22 +91,11 @@ build:docs:
       - documentation/build
     expire_in: 1 day
   rules:
-    - changes:
-      - documentation/
-      - README.md
-      - src/
-      - package-lock.json
-      - package.json
-      - tailwind.config.js
-      - postcss.config.js
-      - gulpfile.js
-      when: always
 
 pages:
   stage: deploy
-  needs:
-    - job: build:docs
-      artifacts: true
+  dependencies:
+    - build:docs
   image: alpine
   script:
     - rm -rf public
@@ -125,15 +105,5 @@ pages:
       - public
     expire_in: 1 day
   rules:
-    - if: '$CI_COMMIT_BRANCH != "main"'
-      when: never
-    - changes:
-      - documentation/
-      - README.md
-      - src/
-      - package-lock.json
-      - package.json
-      - tailwind.config.js
-      - postcss.config.js
-      - gulpfile.js
+    - if: '$CI_COMMIT_BRANCH == "main"'
       when: always
