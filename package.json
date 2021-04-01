@@ -28,5 +28,6 @@
   "repository": {
     "type": "git",
     "url": "git@gitlab.gnome.org:Teams/Engagement/websites/gnome-websites-framework.git"
-  }
+  },
+  "dependencies": {}
 }
