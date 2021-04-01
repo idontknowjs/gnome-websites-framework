@@ -19,7 +19,7 @@ cache: &cacheSettings
   - npm ci --no-shrinkwrap --cache .npm --prefer-offline
 
 .rubyInstallScript: &rubyInstallScript
-  - gem install bundler:2.2.11
+  - gem install bundler:2.2.15
   - bundle install -j $(nproc) --gemfile documentation/Gemfile
 
 stages:
@@ -47,7 +47,7 @@ install:node:
 install:jekyll:
   stage: install
   needs: [ ]
-  image: ruby:2.7
+  image: ruby:3.0
   script:
     - *rubyInstallScript
   cache:
@@ -76,7 +76,7 @@ build:library:
 
 build:docs:
   stage: build:docs
-  image: ruby:2.7-slim
+  image: ruby:3.0-slim
   dependencies:
     - build:library
   before_script:
