@@ -1,0 +1,8 @@
+terminal:
+  image: ruby:3.0
+  before_script:
+    - apt update
+    - curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
+    - apt install nodejs
+  variables:
+    NODE_ENV: "development"
