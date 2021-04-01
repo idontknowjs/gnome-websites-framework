@@ -125,4 +125,15 @@ pages:
       - public
     expire_in: 1 day
   rules:
-    - if: '$CI_COMMIT_BRANCH == "main"'
+    - if: '$CI_COMMIT_BRANCH != "main"'
+      when: never
+    - changes:
+      - documentation/
+      - README.md
+      - src/
+      - package-lock.json
+      - package.json
+      - tailwind.config.js
+      - postcss.config.js
+      - gulpfile.js
+      when: always
