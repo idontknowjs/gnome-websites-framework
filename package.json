@@ -22,17 +22,13 @@
     "tailwindcss": "^2.0.4"
   },
   "peerDependencies": {
-    "autoprefixer": "^9.4.5",
-    "postcss": "^7.0.0",
+    "autoprefixer": "^10.2.5",
+    "postcss": "^8.2.9",
     "postcss-nested": "^4.1.1"
   },
   "repository": {
     "type": "git",
     "url": "git@gitlab.gnome.org:Teams/Engagement/websites/gnome-websites-framework.git"
-  },
-  "dependencies": {
-    "autoprefixer": "^10.2.5",
-    "postcss": "^8.2.9"
   },
   "engines": {
     "node": ">=12.13.0",
