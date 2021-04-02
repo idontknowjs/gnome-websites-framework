@@ -207,24 +207,53 @@ Refers to enabling or disabling options.
 
 ![Regular search](../assets/regular-search.gif)
 
-~~~html
 <label for="search">Regular search</label>
-<div id="search" class="search mr-6 mb-8">
-    <input type="search" onfocus="addBlueToSearchIcon('search-icon')"
-        onfocusout="removeBlueFromSearchIcon('search-icon')" class="w-52" placeholder="Search for content">
-    <svg class="search-icon ml-2" id="search-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+<div id="search" class="search">
+     <svg id="search-icon" class="feather feather-search search-icon "  
+        xmlns="http://www.w3.org/2000/svg" width="24" height="24"
         viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-        stroke-linejoin="round" class="feather feather-search">
+        stroke-linejoin="round">
         <circle cx="11" cy="11" r="8"></circle>
         <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-    </svg>
+     </svg>
+     <input type="search" class="static w-50"
+        onfocus="addBlueToSearchIcon('search-icon')"
+        onfocusout="removeBlueFromSearchIcon('search-icon')"  
+        placeholder="Search for content">    
 </div>
+
 <script>
     function addBlueToSearchIcon(id) {
         let searchIcon = document.getElementById(id);
         searchIcon.classList.add("text-gnome-blue-500");
     }
+    function removeBlueFromSearchIcon(id) {
+        let searchIcon = document.getElementById(id);
+        searchIcon.classList.remove("text-gnome-blue-500");
+    }
+</script>
 
+~~~html
+<label for="search">Regular search</label>
+<div id="search" class="search">
+     <svg id="search-icon" class="feather feather-search search-icon "  
+        xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+        stroke-linejoin="round">
+        <circle cx="11" cy="11" r="8"></circle>
+        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+     </svg>
+     <input type="search" class="static w-50"
+        onfocus="addBlueToSearchIcon('search-icon')"
+        onfocusout="removeBlueFromSearchIcon('search-icon')"  
+        placeholder="Search for content">    
+</div>
+
+<script>
+    function addBlueToSearchIcon(id) {
+        let searchIcon = document.getElementById(id);
+        searchIcon.classList.add("text-gnome-blue-500");
+    }
     function removeBlueFromSearchIcon(id) {
         let searchIcon = document.getElementById(id);
         searchIcon.classList.remove("text-gnome-blue-500");
