@@ -260,53 +260,84 @@ Refers to enabling or disabling options.
     }
 </script>
 ~~~
-
-### Collapsable search
-
+### CollapsableSearch
 ![Collapsable search](../assets/collapsable-search.gif)
 
-~~~html
-<label for="search" class="mt-8">Collapsed search</label>
-<div id="search" class="search mr-6 mb-8">
-    <input type="search" id="collapsable-search" onfocus="addBlueToCollapsableSearchIcon('collapsable-search-icon')"
-        onfocusout="removeBlueFromCollapsableSearchIcon('collapsable-search-icon')" class="w-52"
-        placeholder="Search for content">
-    <svg class="search-icon cursor-pointer ml-2" id="collapsable-search-icon"
-        onclick="toggleSearchInputDisplay('collapsable-search')" xmlns="http://www.w3.org/2000/svg"
-        width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-        stroke-linecap="round" stroke-linejoin="round" class="feather feather-search">
+<div id="search" class="search">
+    <svg id="collapse-search-icon" class="feather feather-search search-icon cursor-pointer z-10"
+        onclick="toggleSearchInputOpacity('collapsable-search')"  
+        xmlns="http://www.w3.org/2000/svg" 
+        width="24" height="24"
+        viewBox="0 0 24 24" 
+        fill="none" 
+        stroke="currentColor" 
+        stroke-width="2" 
+        stroke-linecap="round"
+        stroke-linejoin="round">
         <circle cx="11" cy="11" r="8"></circle>
         <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
     </svg>
+    <input type="search" id="collapsable-search" class="static w-50"
+        disabled="true"
+        onfocus="addBlueToCollapsableSearchIcon('collapsable-search-icon')"
+        onfocusout="removeBlueFromCollapsableSearchIcon('collapsable-search-icon')" 
+        placeholder="Search for content">
 </div>
 <script>
-    function toggleSearchInputDisplay(id) {
+    function toggleSearchInputOpacity(id) {
         let collapsableSearch = document.getElementById(id);
-        console.log(collapsableSearch.style.display);
-        if (collapsableSearch.style.display === "block") {
-            hideSearchInput(id);
+        if (collapsableSearch.style.opacity == 1) {
+            collapsableSearch.disabled = true;
+            collapsableSearch.style.opacity = 0;
         } else {
-            console.log("displaying");
-            collapsableSearch.style.display = "block";
+            collapsableSearch.disabled = false;
+            collapsableSearch.style.opacity = 1;
             collapsableSearch.focus();
-            addBlueToCollapsableSearchIcon(id + "-icon");
         }
     }
 
-    function hideSearchInput(id) {
-        let collapsableSearch = document.getElementById(id);
-        removeBlueFromCollapsableSearchIcon(id + "-icon");
-        if (!collapsableSearch.value) {
-            collapsableSearch.style.display = "none";
-        }
-    }
-
-    function toggleSearchIconColor(id) {
+    function addBlueToCollapsableSearchIcon(id) {
         let searchIcon = document.getElementById(id);
-        if (searchIcon.classList.contains("text-gnome-blue-500")) {
-            removeBlueFromCollapsableSearchIcon(id);
+        searchIcon.classList.add("text-gnome-blue-500");
+    }
+
+    function removeBlueFromCollapsableSearchIcon(id) {
+        let searchIcon = document.getElementById(id);
+        searchIcon.classList.remove("text-gnome-blue-500");
+    }
+</script>
+
+~~~html
+<div id="search" class="search">
+    <svg id="collapse-search-icon" class="feather feather-search search-icon cursor-pointer z-10"
+        onclick="toggleSearchInputOpacity('collapsable-search')"  
+        xmlns="http://www.w3.org/2000/svg" 
+        width="24" height="24"
+        viewBox="0 0 24 24" 
+        fill="none" 
+        stroke="currentColor" 
+        stroke-width="2" 
+        stroke-linecap="round"
+        stroke-linejoin="round">
+        <circle cx="11" cy="11" r="8"></circle>
+        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+    </svg>
+    <input type="search" id="collapsable-search" class="static w-50"
+        disabled="true"
+        onfocus="addBlueToCollapsableSearchIcon('collapsable-search-icon')"
+        onfocusout="removeBlueFromCollapsableSearchIcon('collapsable-search-icon')" 
+        placeholder="Search for content">
+</div>
+<script>
+    function toggleSearchInputOpacity(id) {
+        let collapsableSearch = document.getElementById(id);
+        if (collapsableSearch.style.opacity == 1) {
+            collapsableSearch.disabled = true;
+            collapsableSearch.style.opacity = 0;
         } else {
-            addBlueToCollapsableSearchIcon(id);
+            collapsableSearch.disabled = false;
+            collapsableSearch.style.opacity = 1;
+            collapsableSearch.focus();
         }
     }
 
