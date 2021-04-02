@@ -40,12 +40,12 @@ For multiline inputs.
 
 ## Date
 
-<div class="flex flex-col w-1/2">
+<div class="flex flex-col">
     <label for="date">Birthday</label>
     <input type="date" class="mt-2" id="date">
 </div>
 ~~~html
-<div class="flex flex-col w-1/2">
+<div class="flex flex-col ">
     <label for="date">Birthday</label>
     <input type="date" class="mt-2" id="date">
 </div>
