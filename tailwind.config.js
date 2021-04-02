@@ -2,10 +2,9 @@ module.exports = {
   purge: [],
   theme: {
     extend: {
-      boxShadow: {
-        'outline-3': '0 0 0 3px rgba(66, 153, 225, 0.5)',
-        'outline-5': '0 0 0 5px rgba(66, 153, 225, 0.2)',
-        'outline-invalid-3': '0 0 0 3px rgba(255, 92, 93, 0.5)',
+      ringWidth: {
+        '3': '3px',
+        '5': '5px',
       },
       colors: {
         'gnome-blue': {

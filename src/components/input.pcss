@@ -4,14 +4,14 @@ select {
     @apply form-input border border-gray-200 bg-white shadow text-gray-800 px-4 py-2;
     
     &:focus {
-        @apply outline-none shadow-outline-3;
+        @apply outline-none ring-3 ring-gnome-blue-500 ring-opacity-50;
     }
 
     &.danger {
         @apply text-red-400 border border-red-400;
         
         &:focus {
-            @apply outline-none shadow-outline-invalid-3;
+            @apply outline-none ring-3 ring-red-400 ring-opacity-50;
         }    
     }
 }
@@ -35,7 +35,7 @@ select {
         @apply shadow-none absolute block w-6 h-6 rounded-full bg-white border-4 appearance-none cursor-pointer;
 
         &:focus {
-            @apply outline-none shadow-outline-5;
+            @apply outline-none ring-5 ring-gnome-blue-500 ring-opacity-20;
         }
         
         &:checked {
@@ -53,7 +53,7 @@ input[type=search] {
     @apply border-t-0 border-r-0 border-b-2 border-l-0 border-gray-900;
 
     &:focus {
-        @apply outline-none shadow-outline-3 border-gnome-blue-500 .border-opacity-50 .rounded;
+        @apply outline-none ring-3 ring-gnome-blue-500 ring-opacity-50 border-gnome-blue-500 .border-opacity-50 .rounded;
         @apply border-b-2 border-gnome-blue-500 .rounded;
     }
 }
