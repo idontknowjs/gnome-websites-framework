@@ -1,13 +1,9 @@
 title: GNOME UI
 email: engagement@gnome.org
-description: >-
-  GNOME's own UI library.
+description: GNOME's own UI library.
 baseurl: "/Engagement/websites/gnome-websites-framework"
 logo: "/assets/logo-horizontal.svg"
-
-# Build settings
 theme: just-the-docs
 color_scheme: gnome-blue
-
 plugins:
   - jekyll-feed
