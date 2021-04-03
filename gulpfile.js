@@ -16,5 +16,15 @@ gulp.task('build', () =>
       .pipe(clean())
       .pipe(rename({suffix:'.min'}))
       .pipe(sourcemaps.write('.'))
-      .pipe(gulp.dest("dist")),
+      .pipe(gulp.dest('dist')),
+);
+
+gulp.task('copy', () =>
+  gulp.src('dist/index.css').
+    pipe(rename('custom.scss')).
+      pipe(gulp.dest('documentation/_sass/custom/')),
+);
+
+gulp.task('watch', () => 
+  gulp.watch(['src/**/*.css', 'src/**/*.pcss'], gulp.series('build', ['copy']))
 );

@@ -3,7 +3,8 @@
   "version": "0.0.1",
   "description": "GNOME's Foundation CSS Framework for crafting Websites",
   "scripts": {
-    "build": "gulp build"
+    "build": "gulp build",
+    "watch": "gulp watch"
   },
   "author": "GNOME Engagement Team <engagement@gnome.org>",
   "license": "MIT",
