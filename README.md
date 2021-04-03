@@ -1,3 +1,10 @@
+---
+layout: home
+title: Home
+permalink: /
+nav_order: 1
+---
+
 # GNOME Websites Framework
 
 The GNOME Websites Framework is a CSS library built using [Tailwind CSS](https://tailwindcss.com/) to be used to craft and style Websites following GNOME's own visual identity. It eases the styling process of the websites and enables better consistency between them while keeping a beautiful and GNOMEish look.
@@ -71,21 +78,24 @@ This command will output the following styles
 ### Building the Docs (Jekyll)
 
 - Install the Bundler dependencies (first-time)
-    ```
+    ```sh
     cd documentation/
     bundle install
     ```
-- Run the documentation server:
+- You also need to copy the README.md file that is used as the Index page (Usually only needed once)
+    ```sh
+    cp ../README.md ./index.md
     ```
+- Run the documentation server:
+    ```sh
     bundle exec jekyll serve
     ```
-- Navigate to http://127.0.0.1:4000/Engagement/websites/gnome-websites-framework/ in your browser to see it running.
+- Navigate to `http://localhost:4000/Engagement/websites/gnome-websites-framework/` in your browser to see it running.
 
 ## Contributing
 
 To contribute, open merge requests at https://gitlab.gnome.org/Teams/Engagement/websites/general-website-resources.
 
-Commit messages should follow the [GNOME commit message
-guidelines](https://wiki.gnome.org/Git/CommitMessages).
+Commit messages should follow the [GNOME commit message guidelines](https://wiki.gnome.org/Git/CommitMessages).
 
 Join our conversations on [Matrix or IRC](https://wiki.gnome.org/Community/GettingInTouch/IRC). You can find us at the #engagement:gnome.org channel.
