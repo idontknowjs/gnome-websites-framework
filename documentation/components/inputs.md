@@ -216,8 +216,8 @@ Refers to enabling or disabling options.
         <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
      </svg>
      <input type="search" class="static w-50"
-        onfocus="addBlueToSearchIcon('search-input-icon')"
-        onfocusout="removeBlueFromSearchIcon('search-input-icon')"  
+        onfocus="addBlueToSearchIcon('search-icon-input')"
+        onfocusout="removeBlueFromSearchIcon('search-icon-input')"  
         placeholder="Search for content">    
 </div>
 
