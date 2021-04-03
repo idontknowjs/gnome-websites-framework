@@ -84,7 +84,8 @@ build:docs:
   script:
     - cd documentation
     - mkdir _sass/custom
-    - cp ../dist/index.css "_sass/custom/custom.scss"
+    - cp ../dist/index.css _sass/custom/custom.scss
+    - cp ../README.md index.md
     - bundle exec jekyll build -d build
   artifacts:
     paths:
