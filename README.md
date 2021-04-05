@@ -42,7 +42,7 @@ The steps below will provide you guidance in how to setup the dependencies and h
     ```
 - Install the Documentation (Jekyll) dependencies
     ```sh
-    gem install bundler:2.2.11
+    gem install bundler:2.2.15
     ```
 
 ### Building the Library (CSS/Tailwind)
