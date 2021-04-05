@@ -1,27 +1,39 @@
-input,
+input[type='text'],
+input[type='date'],
+input[type='email'],
+input[type='password'],
+input[type='number'],
 textarea,
 select {
-    @apply form-input border border-gray-200 bg-white shadow text-gray-800 px-4 py-2;
+    @apply border border-gray-200 bg-white shadow text-gray-800 px-4 py-2 rounded;
     
     &:focus {
-        @apply outline-none ring-3 ring-gnome-blue-500 ring-opacity-50;
+        @apply outline-none ring-3 ring-gnome-blue-500 ring-opacity-50 rounded;
     }
 
     &.danger {
-        @apply text-red-400 border border-red-400;
+        @apply text-red-400 border border-red-400 rounded;
         
         &:focus {
-            @apply outline-none ring-3 ring-red-400 ring-opacity-50;
+            @apply outline-none ring-3 ring-red-400 ring-opacity-50 rounded;
         }    
     }
 }
 
-.form-checkbox {
-    @apply text-gnome-blue-500;
+input[type='checkbox'] {
+    @apply text-gnome-blue-500 rounded;
+
+    &:focus {
+        @apply outline-none ring-3 ring-gnome-blue-500 ring-opacity-50;
+    }
 }
 
-.form-radio {
+input[type='radio'] {
     @apply text-gnome-blue-500;
+
+    &:focus {
+        @apply outline-none ring-3 ring-gnome-blue-500 ring-opacity-50;
+    }
 }
 
 .toggle {
@@ -48,8 +60,8 @@ select {
     }
 }
 
-input[type=search] {
-    @apply pl-10 border-transparent shadow-none rounded-none transition duration-200 ease-in-out;
+input[type='search'] {
+    @apply pl-8 border-transparent shadow-none rounded-none transition duration-200 ease-in-out;
     @apply border-t-0 border-r-0 border-b-2 border-l-0 border-gray-900;
 
     &:focus {
@@ -58,16 +70,13 @@ input[type=search] {
     }
 }
 
-input[type=date]{
-    @apply p-2 pl-5 w-40;
-}
+.search-icon {
+    @apply left-0 top-0 my-3 text-gray-900 h-5 w-5 inline-block items-center;
 
-.search {
-    @apply relative;
-}
+    &:focus {
+        @apply text-gnome-blue-500;
+    }    
 
-.search-input-icon {
-    @apply absolute h-5 w-5 text-gray-900 my-3 mx-2 bottom-0;
 }
 
 #collapsable-search-input {
