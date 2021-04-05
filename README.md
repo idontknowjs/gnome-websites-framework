@@ -88,7 +88,7 @@ This command will output the following styles
     ```
 - Run the documentation server:
     ```sh
-    bundle exec jekyll serve
+    bundle exec jekyll serve --watch
     ```
 - Navigate to `http://localhost:4000/Engagement/websites/gnome-websites-framework/` in your browser to see it running.
 
