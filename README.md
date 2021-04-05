@@ -17,6 +17,8 @@ The GNOME UI Documentation is developed using [Jekyll](https://jekyllrb.com/) an
 
 The project documentation is placed in the `documentation` folder.
 
+You might check the current status of the project regarding backlog, evaluation and implementation of its main components [here](https://gitlab.gnome.org/Teams/Engagement/websites/gnome-websites-framework/-/issues/23).
+
 ## Getting started
 
 The steps below will provide you guidance in how to setup the dependencies and how to build the components of this repository.
@@ -99,3 +101,5 @@ To contribute, open merge requests at https://gitlab.gnome.org/Teams/Engagement/
 Commit messages should follow the [GNOME commit message guidelines](https://wiki.gnome.org/Git/CommitMessages).
 
 Join our conversations on [Matrix or IRC](https://wiki.gnome.org/Community/GettingInTouch/IRC). You can find us at the #engagement:gnome.org channel.
+
+If you're a **GSoC Student** please give a read to the [GSoC FAQ](https://gitlab.gnome.org/Teams/Engagement/websites/gnome-websites-framework/-/issues/35)
