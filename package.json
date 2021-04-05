@@ -30,8 +30,7 @@
     "url": "git@gitlab.gnome.org:Teams/Engagement/websites/gnome-websites-framework.git"
   },
   "engines": {
-    "node": ">=12.13.0",
-    "npm": ">=6.12.0"
+    "node": ">= 14.0.0"
   },
   "dependencies": {
     "autoprefixer": "^10.2.5",
