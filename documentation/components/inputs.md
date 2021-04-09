@@ -223,6 +223,7 @@ Refers to enabling or disabling options.
     <input type="search" onfocus="addBlueToSearchIcon('search-icon')"
         onfocusout="removeBlueFromSearchIcon('search-icon')" class="w-52" placeholder="Search for content">
 </div>
+
 <script>
     function addBlueToSearchIcon(id) {
         let searchIcon = document.getElementById(id);
@@ -253,6 +254,7 @@ Refers to enabling or disabling options.
         let searchIcon = document.getElementById(id);
         searchIcon.classList.add("text-gnome-blue-500");
     }
+
     function removeBlueFromSearchIcon(id) {
         let searchIcon = document.getElementById(id);
         searchIcon.classList.remove("text-gnome-blue-500");
