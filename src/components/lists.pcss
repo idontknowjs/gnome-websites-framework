@@ -1,0 +1,26 @@
+ol {
+    @apply px-8 py-5;
+    @apply text-gray-900;
+
+    .ordered-item{
+        @apply font-sans leading-snug tracking-wide;
+        @apply list-decimal;
+    }
+
+    .ordered-item::before{
+        @apply hidden; 
+    }
+}
+
+ul {
+    @apply px-8 py-5;
+    @apply text-gray-900;
+
+    .unordered-item{
+        @apply font-sans leading-snug tracking-wide;
+    }
+
+    .unordered-item::before{
+        @apply hidden; 
+    }
+}
