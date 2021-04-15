@@ -2,7 +2,7 @@
 layout: default
 title: Buttons
 parent: Components
-nav_order: 1
+nav_order: 2
 permalink: /components/buttons
 ---
 
