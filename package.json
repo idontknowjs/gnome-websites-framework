@@ -6,10 +6,18 @@
     "build": "gulp build",
     "watch": "gulp watch"
   },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
   "author": "GNOME Engagement Team <engagement@gnome.org>",
   "license": "MIT",
   "devDependencies": {
+    "@commitlint/cli": "^12.1.1",
+    "@commitlint/config-conventional": "^12.1.1",
     "@tailwindcss/forms": "^0.2.1",
+    "commitlint": "^12.1.1",
     "gulp": "^4.0.2",
     "gulp-clean-css": "^4.3.0",
     "gulp-concat-css": "^3.1.0",
@@ -17,6 +25,7 @@
     "gulp-postcss": "^9.0.0",
     "gulp-rename": "^2.0.0",
     "gulp-sourcemaps": "^2.6.5",
+    "husky": "^6.0.0",
     "postcss": "^8.2.9",
     "postcss-import": "^12.0.1",
     "postcss-omit-import-tilde": "^1.0.1",
