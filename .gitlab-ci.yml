@@ -43,6 +43,8 @@ install:node:
       when: always
     - if: '$CI_PIPELINE_SOURCE == "merge_request_event"'
       when: always
+    - if: '$CI_COMMIT_BRANCH == "main"'
+      when: manual
 
 install:jekyll:
   stage: install
@@ -59,6 +61,8 @@ install:jekyll:
       when: always
     - if: '$CI_PIPELINE_SOURCE == "merge_request_event"'
       when: always
+    - if: '$CI_COMMIT_BRANCH == "main"'
+      when: manual
 
 build:library:
   stage: build:library
