@@ -168,30 +168,3 @@ Buttons placed in columns instead of next to each other need to have the same wi
     </div>
 </div>
 ~~~
-
-## Links
-
-link buttons behave like regular anchors but they have a special look - they are buttons with no background, borders, or shadows, but they respect buttons colors and have an underline hover effect. Use the `link` class combined with colors.
-
-<br>
-<div class="container flex-grow">
-    <button class="link mr-2 my-2">Link</button>
-    <button class="link gnome-blue mr-2 my-2">Link</button>
-    <button class="link red mr-2 my-2">Link</button>
-    <button class="link orange mr-2 my-2">Link</button>
-    <button class="link yellow mr-2 my-2">Link</button>
-    <button class="link green mr-2 my-2">Link</button>
-    <button class="link white mr-2 my-2">Link</button>
-</div>
-<br>
-~~~html
-<div class="container flex-grow">
-    <button class="link mr-2 my-2">Link</button>
-    <button class="link gnome-blue mr-2 my-2">Link</button>
-    <button class="link red mr-2 my-2">Link</button>
-    <button class="link orange mr-2 my-2">Link</button>
-    <button class="link yellow mr-2 my-2">Link</button>
-    <button class="link green mr-2 my-2">Link</button>
-    <button class="link white mr-2 my-2">Link</button>
-</div>
-~~~
