@@ -99,13 +99,18 @@ module.exports = {
     },
     fontFamily: {
       sans: [
-        '"Source Sans Pro"',
+        'Source Sans Pro',
         'Cantarell',
-        '"Droid Sans"',
+        'Droid Sans',
         'Ubuntu',
-        '"DejaVu Sans"',
+        'DejaVu Sans',
         'Arial',
         'sans-serif',
+      ],
+      mono: [
+        'Monaco',
+        'monospace',
+        'Menlo',
       ],
     },
     fontSize: {

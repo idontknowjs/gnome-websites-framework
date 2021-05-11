@@ -84,7 +84,7 @@ permalink: /components/lists
     </ul>
 </div>
 ~~~html
-<div class="inline">
+<div class="container">
     <ul>
         <li class="horizontal-item"> Item 1 </li>
         <li class="horizontal-item"> Item 2 </li>
@@ -95,20 +95,50 @@ permalink: /components/lists
 </div>
 ~~~
 
-<!-- # Horizontal list  -->
-<!-- <div class="horizontal-div">
-    <div class="horizontal-inner"> Item 1 </div>
-    <div class="horizontal-inner"> Item 2 </div>
-    <div class="horizontal-inner"> Item 3 </div>
-    <div class="horizontal-inner"> Item 4 </div>
-    <div class="horizontal-inner"> Item 5 </div>
+## Two line list
+<div class="container">
+    <ul>
+        <li class="two_line_outer"> Item 1
+            <ul> 
+                <li class="two_line_inner">Lorem ipsum dolor sit amet,
+                consectetur</li>
+            </ul>
+       </li>
+       <li class="two_line_outer"> Item 2
+            <ul> 
+                <li class="two_line_inner">Lorem ipsum dolor sit amet,
+                consectetur</li>
+            </ul>
+       </li>
+       <li class="two_line_outer"> Item 3
+            <ul> 
+                <li class="two_line_inner">Lorem ipsum dolor sit amet,
+                consectetur</li>
+            </ul>
+       </li>
+    </ul>
 </div>
 ~~~html
-<div class="horizontal-div">
-    <div class="horizontal-inner"> Item 1 </div>
-    <div class="horizontal-inner"> Item 2 </div>
-    <div class="horizontal-inner"> Item 3 </div>
-    <div class="horizontal-inner"> Item 4 </div>
-    <div class="horizontal-inner"> Item 5 </div>
+<div class="container">
+    <ul>
+        <li class="two_line_outer"> Item 1
+            <ul> 
+                <li class="two_line_inner">Lorem ipsum dolor sit amet,
+                consectetur</li>
+            </ul>
+       </li>
+       <li class="two_line_outer"> Item 2
+            <ul> 
+                <li class="two_line_inner">Lorem ipsum dolor sit amet,
+                consectetur</li>
+            </ul>
+       </li>
+       <li class="two_line_outer"> Item 3
+            <ul> 
+                <li class="two_line_inner">Lorem ipsum dolor sit amet,
+                consectetur</li>
+            </ul>
+       </li>
+    </ul>
 </div>
-~~~ -->
+~~~

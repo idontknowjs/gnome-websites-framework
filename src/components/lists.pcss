@@ -1,5 +1,5 @@
 ol {
-    @apply px-8 py-5;
+    @apply px-8;
     @apply text-gray-900;
     @apply font-sans leading-snug tracking-wide;
 
@@ -13,7 +13,7 @@ ol {
 }
 
 ul {
-    @apply px-8 py-5;
+    @apply px-8;
     @apply text-gray-900;
     @apply font-sans leading-snug tracking-wide;
 
@@ -26,7 +26,7 @@ ul {
     }
 
     .bulleted-item {
-        @apply list-disc;
+        list-style-image: url('../bullet_list_icon_small.svg');
         
         &::before {
             @apply hidden;
@@ -34,21 +34,37 @@ ul {
     }
 
     .horizontal-item {
-        @apply inline-flex px-2;
+        @apply inline-flex;
         @apply list-none;
+        @apply px-2 border-r border-gray-300;
 
         &::before {
             @apply hidden;
         }
-    } 
+
+        &:last-of-type {
+            @apply border-0;
+        }
+    }
+
+    .two_line_outer {
+        @apply list-none;
+        @apply mb-4 mr-8 pb-1;
+        @apply font-semibold;
+        @apply border-b border-gray-300 max-w-max;
+    
+        &::before {
+            @apply hidden;
+        }
+    }
+    
+    .two_line_inner {
+        @apply list-none;
+        @apply m-0 p-0;
+        @apply text-sm text-gray-500 font-mono font-normal;
+    
+        &::before {
+            @apply hidden;
+        } 
+    }
 }
-
-/* div {
-    .horizontal-div {
-        @apply inline-flex divide-x-2;
-    }
-
-    .horizontal-inner {
-        @apply px-4;
-    }
-} */
