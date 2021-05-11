@@ -50,3 +50,65 @@ permalink: /components/lists
     </ul>
 </div>
 ~~~
+
+## Bulleted Vertical list 
+<div class="container">
+    <ul>
+        <li class="bulleted-item"> Item 1 </li>
+        <li class="bulleted-item"> Item 2 </li>
+        <li class="bulleted-item"> Item 3 </li>
+        <li class="bulleted-item"> Item 4 </li>
+        <li class="bulleted-item"> Item 5 </li>
+    </ul>
+</div>
+~~~html
+<div class="container">
+    <ul>
+        <li class="bulleted-item"> Item 1 </li>
+        <li class="bulleted-item"> Item 2 </li>
+        <li class="bulleted-item"> Item 3 </li>
+        <li class="bulleted-item"> Item 4 </li>
+        <li class="bulleted-item"> Item 5 </li>
+    </ul>
+</div>
+~~~
+
+## Horizontal list 
+<div class="inline">
+    <ul>
+        <li class="horizontal-item"> Item 1 </li>
+        <li class="horizontal-item"> Item 2 </li>
+        <li class="horizontal-item"> Item 3 </li>
+        <li class="horizontal-item"> Item 4 </li>
+        <li class="horizontal-item"> Item 5 </li>
+    </ul>
+</div>
+~~~html
+<div class="inline">
+    <ul>
+        <li class="horizontal-item"> Item 1 </li>
+        <li class="horizontal-item"> Item 2 </li>
+        <li class="horizontal-item"> Item 3 </li>
+        <li class="horizontal-item"> Item 4 </li>
+        <li class="horizontal-item"> Item 5 </li>
+    </ul>
+</div>
+~~~
+
+<!-- # Horizontal list  -->
+<!-- <div class="horizontal-div">
+    <div class="horizontal-inner"> Item 1 </div>
+    <div class="horizontal-inner"> Item 2 </div>
+    <div class="horizontal-inner"> Item 3 </div>
+    <div class="horizontal-inner"> Item 4 </div>
+    <div class="horizontal-inner"> Item 5 </div>
+</div>
+~~~html
+<div class="horizontal-div">
+    <div class="horizontal-inner"> Item 1 </div>
+    <div class="horizontal-inner"> Item 2 </div>
+    <div class="horizontal-inner"> Item 3 </div>
+    <div class="horizontal-inner"> Item 4 </div>
+    <div class="horizontal-inner"> Item 5 </div>
+</div>
+~~~ -->

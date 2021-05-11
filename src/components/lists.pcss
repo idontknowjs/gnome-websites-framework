@@ -1,26 +1,54 @@
 ol {
     @apply px-8 py-5;
     @apply text-gray-900;
+    @apply font-sans leading-snug tracking-wide;
 
-    .ordered-item{
-        @apply font-sans leading-snug tracking-wide;
+    .ordered-item {
         @apply list-decimal;
-    }
 
-    .ordered-item::before{
-        @apply hidden; 
+        &::before {
+            @apply hidden;
+        }
     }
 }
 
 ul {
     @apply px-8 py-5;
     @apply text-gray-900;
+    @apply font-sans leading-snug tracking-wide;
 
-    .unordered-item{
-        @apply font-sans leading-snug tracking-wide;
+    .unordered-item {
+        @apply list-none;
+
+        &::before {
+            @apply hidden;
+        }
     }
 
-    .unordered-item::before{
-        @apply hidden; 
+    .bulleted-item {
+        @apply list-disc;
+        
+        &::before {
+            @apply hidden;
+        }
     }
+
+    .horizontal-item {
+        @apply inline-flex px-2;
+        @apply list-none;
+
+        &::before {
+            @apply hidden;
+        }
+    } 
 }
+
+/* div {
+    .horizontal-div {
+        @apply inline-flex divide-x-2;
+    }
+
+    .horizontal-inner {
+        @apply px-4;
+    }
+} */
