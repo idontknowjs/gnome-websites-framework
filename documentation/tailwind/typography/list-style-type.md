@@ -1,0 +1,9 @@
+---
+layout: default
+title: List Style Type
+parent: Typography
+grand_parent: Tailwind Documentation
+nav_order: 9
+---
+
+<iframe style="width: 100%; height: 95vh;" src="https://tailwindcss.com/docs/list-style-type"></iframe>
