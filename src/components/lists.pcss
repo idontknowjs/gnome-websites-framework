@@ -3,7 +3,7 @@ ol {
     @apply text-gray-900;
     @apply font-sans leading-snug tracking-wide;
 
-    .ordered-item {
+    &.ordered-item>li {
         @apply list-decimal;
 
         &::before {
@@ -17,7 +17,7 @@ ul {
     @apply text-gray-900;
     @apply font-sans leading-snug tracking-wide;
 
-    .unordered-item {
+    &.unordered-item>li {
         @apply list-none;
 
         &::before {
@@ -25,7 +25,7 @@ ul {
         }
     }
 
-    .bulleted-item {
+    &.bulleted-item>li {
         list-style-image: url('../bullet_list_icon_small.svg');
         
         &::before {
@@ -33,7 +33,7 @@ ul {
         }
     }
 
-    .horizontal-item {
+    &.horizontal-item>li {
         @apply inline-flex;
         @apply list-none;
         @apply px-2 border-r border-gray-300;
@@ -47,10 +47,10 @@ ul {
         }
     }
 
-    .two_line_outer {
+    &.two_line_outer>li {
         @apply list-none;
         @apply mb-4 mr-8 pb-1;
-        @apply font-semibold;
+        @apply font-medium;
         @apply border-b border-gray-300 max-w-max;
     
         &::before {
@@ -58,7 +58,7 @@ ul {
         }
     }
     
-    .two_line_inner {
+    &.two_line_inner>li {
         @apply list-none;
         @apply m-0 p-0;
         @apply text-sm text-gray-500 font-mono font-normal;
